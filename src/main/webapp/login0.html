@@ -104,40 +104,48 @@
 <title>ZYsystem</title>
 
 </head>
-<body >
-<div  style="height: 10%;">
+<body>
+    <div class="login">
+        <div class="login-head">
+            <div class="login-head-a">
+                <img src="images/mws-logo.png" title="" alt=""/>
+                <p>我的</p>
+            </div>
+            <div class="login-head-b">
+                商户后台管理
+            </div>
+        </div>
+        <div class="login-con">
+            <div class="login-a">
+                <form id="loginForm" method=""action="#"onsubmit="return validate()">
+                    <div class="login-b">
+                        <div class="login-b-a">用户登陆</div>
+                        <div class="login-b-b">
+                            <ul>
+                                <li>
+                                    <label for="userName" >用户名：</label><input type="text" id="username" name="userName"/>
+                                    <h1 id="m-tip"></h1>
+                                </li>
+                                <li>
+                                    <label for="password">密 &nbsp;&nbsp;码：</label><input type="password" id="password" name="password"/>
+                                    <h1 id="p-tip"></h1>
+                                </li>
+                                <li class="login-x">
+                                    <div class="login-x-a"><input type="submit" name="登录"value="登录"id="Button1" onClick="dologin();" /><div class="x"></div></div>
+                                </li>
 
-    <div id="mws-logo-wrap" >
-        <img src="images/mws-logo.png" alt="mws admin" />
-    </div>
-</div>
-<div style="height: 90%;top: 10%;width:60%;float:left">
-    <div style="float: left"><img src="images/logo3.png" alt=""/></div>
-    <div style="float: left;width: 250px"></div>
-    <div style="float: left"><img src="images/logo1.png" alt=""/></div>
-</div>
-<div style="height: 90%;top: 10%;width:40%;right:20%;float: right">
-        <div id="mws-login" >
-    	<h1>登录</h1>
-        <div class="mws-login-lock"><img src="css/icons/24/locked-2.png" alt="" /></div>
-    	<div id="mws-login-form">
-        	<form class="mws-form" action="dashboard.html" method="post">
-                <div class="mws-form-row">
-                	<div class="mws-form-item large">
-                    	<input type="text" class="mws-login-username mws-textinput" placeholder="username" id="username"/>
+                            </ul>
+                        </div>
+                        <div class="login-b-c">
+                            <a href="#">免费接入</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">忘记登录密码？</a>
+                        </div>
                     </div>
-                </div>
-                <div class="mws-form-row">
-                	<div class="mws-form-item large">
-                    	<input type="password" class="mws-login-password mws-textinput" placeholder="password" id="password" />
-                    </div>
-                </div>
-                <div class="mws-form-row">
-                	<input type="button" value="登录" class="mws-button green mws-login-button" onclick="dologin()" />
-                </div>
-            </form>
+                </form>
+            </div>
+        </div>
+        <div class="login-foot">
+            我的网络科技有限公司©2014 浙ICP备12040171号
         </div>
     </div>
-</div>
 </body>
 </html>
