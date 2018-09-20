@@ -5,7 +5,7 @@
 <mapper namespace="com.dao.loginDao">
 
     <select id="getPasswd" resultType="login" parameterType="String">
-        SELECT username,password FROM tb_login t where t.username=#{username}
+        SELECT t.user,t.password FROM tb_user t where t.user=#{username}
     </select>
 
 </mapper>
