@@ -955,7 +955,6 @@
     }
     function showTB2()
     {
-        $("#chart3").show();
         $("#table3").hide();
         $("#xx2").css('background-color','grey');
         $("#tb2").css('background-color','#4386bc');
@@ -964,10 +963,410 @@ var lx=$("#select_lx").val();
 if(city=="国内")
 {
 
-}else {
-    $("#chart4").css('height','0px');
-}
+}else if(lx=="订单"){
+    $("#mws-bar-chart4").hide();
+    myChart3.dispose();
+    myChart3=echarts.init(document.getElementById('mws-bar-chart3'));
+    option3={
+        title: {
+            text: city+lx,
+            subtext: 'From ome',
+            left:'center'
+        },
+            tooltip : {
+                trigger: 'axis',
+                axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+                    type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+                }
+            },
+            legend: {
+                data: ['延迟', '本月','下月','下下月'],
+                left:'left'
+            },
+            grid: {
+                left: '3%',
+                right: '4%',
+                bottom: '3%',
+                containLabel: true
+            },
+            xAxis:  {
+                type: 'category',
+                data: ['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月']
 
+            },
+            yAxis: {
+                type: 'value'
+            },
+            series: [
+                {
+                    name: '延迟',
+                    type: 'bar',
+                    stack: '总量',
+                    label: {
+                        normal: {
+                            show: true,
+                            position: 'insideRight'
+                        }
+                    },
+                    data: [1000,800,1200,1700,2200,2300,2400,1900,1800,2100,1800,1700]
+                },
+                {
+                    name: '下下月',
+                    type: 'bar',
+                    stack: '总量',
+                    label: {
+                        normal: {
+                            show: true,
+                            position: 'insideRight'
+                        }
+                    },
+                    data: [500,800,600,700,1200,300,400,900,600,700,900,1100]
+                },
+                {
+                    name: '下月',
+                    type: 'bar',
+                    stack: '总量',
+                    label: {
+                        normal: {
+                            show: true,
+                            position: 'insideRight'
+                        }
+                    },
+                    data: [1200,300,200,700,2200,1300,1400,1500,1600,1100,1600,1000]
+                },
+                {
+                    name: '本月',
+                    type: 'bar',
+                    stack: '总量',
+                    label: {
+                        normal: {
+                            show: true,
+                            position: 'insideRight'
+                        }
+                    },
+                    data: [1000,800,1200,1700,2200,2300,2400,1900,1800,2100,1800,1700]
+                }
+            ]
+    };
+    myChart3.setOption(option3);
+}
+else if(lx=="销售"){
+    $("#mws-bar-chart4").hide();
+    myChart3.dispose();
+    myChart3=echarts.init(document.getElementById('mws-bar-chart3'));
+    option3={
+        title: {
+            text: city+lx,
+            subtext: 'From ome',
+            left:'center'
+        },
+        tooltip : {
+            trigger: 'axis',
+            axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+                type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+            }
+        },
+        legend: {
+            data: ['销售额', '预算','延迟','OTC'],
+            left:'left'
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        xAxis:  {
+            type: 'category',
+            data: ['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月']
+
+        },
+        yAxis: {
+            type: 'value'
+        },
+        series: [
+            {
+                name: '销售额',
+                type: 'line',
+                stack: '总量',
+                label: {
+                    normal: {
+                        show: true,
+                        position: 'insideRight'
+                    }
+                },
+                data: [1000,800,1200,1700,2200,2300,2400,1900,1800,2100,1800,1700],
+                symbol: 'triangle',
+                symbolSize: 20,
+                lineStyle: {
+                    normal: {
+                        color: 'green',
+                        width: 4,
+                        type: 'dashed'
+                    }
+                }
+            },
+            {
+                name: '预算',
+                type: 'bar',
+                stack: '总量',
+                label: {
+                    normal: {
+                        show: true,
+                        position: 'insideRight'
+                    }
+                },
+                data: [500,800,600,700,1200,300,400,900,600,700,900,1100]
+            },
+            {
+                name: '延迟',
+                type:'line',
+                smooth: true,
+                stack: '总量',
+                label: {
+                    normal: {
+                        show: true,
+                        position: 'insideRight'
+                    }
+                },
+                data: [1200,300,200,700,2200,1300,1400,1500,1600,1100,1600,1000]
+            },
+            {
+                name: 'OTC',
+                type:'line',
+                stack: '总量',
+                label: {
+                    normal: {
+                        show: true,
+                        position: 'insideRight'
+                    }
+                },
+                data: [1000,800,1200,1700,2200,2300,2400,1900,1800,2100,1800,1700],
+                symbol: 'point',
+                symbolSize: 20,
+                lineStyle: {
+                    normal: {
+                        color: 'red',
+                        width: 4,
+                        type: 'dashed'
+                    }
+                }
+            }
+        ]
+    };
+    myChart3.setOption(option3);
+}else if(lx=="订单残"){
+    $("#mws-bar-chart4").hide();
+    myChart3.dispose();
+    myChart3=echarts.init(document.getElementById('mws-bar-chart3'));
+    option3={
+        title: {
+            text: city+lx,
+            subtext: 'From ome',
+            left:'center'
+        },
+        tooltip : {
+            trigger: 'axis',
+            axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+                type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+            }
+        },
+        legend: {
+            data: ['延迟', '本月对象','下月期货','下下月期货','之后','销售预算'],
+            left:'left'
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        xAxis:  {
+            type: 'category',
+            data: ['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月']
+
+        },
+        yAxis: {
+            type: 'value'
+        },
+        series: [
+            {
+                name: '延迟',
+                type: 'bar',
+                stack: '总量',
+                label: {
+                    normal: {
+                        show: true,
+                        position: 'insideRight'
+                    }
+                },
+                data: [1000,800,1200,1700,2200,2300,2400,1900,1800,2100,1800,1700]
+            },
+            {
+                name: '本月对象',
+                type: 'bar',
+                stack: '总量',
+                label: {
+                    normal: {
+                        show: true,
+                        position: 'insideRight'
+                    }
+                },
+                data: [500,800,600,700,1200,300,400,900,600,700,900,1100]
+            },
+            {
+                name: '下月期货',
+                type: 'bar',
+                stack: '总量',
+                label: {
+                    normal: {
+                        show: true,
+                        position: 'insideRight'
+                    }
+                },
+                data: [1200,300,200,700,2200,1300,1400,1500,1600,1100,1600,1000]
+            },
+            {
+                name: '下下月期货',
+                type: 'bar',
+                stack: '总量',
+                label: {
+                    normal: {
+                        show: true,
+                        position: 'insideRight'
+                    }
+                },
+                data: [1000,800,1200,1700,2200,2300,2400,1900,1800,2100,1800,1700]
+            },
+            {
+                name: '之后',
+                type: 'bar',
+                stack: '总量',
+                label: {
+                    normal: {
+                        show: true,
+                        position: 'insideRight'
+                    }
+                },
+                data: [1000,800,1200,1700,2200,2300,2400,1900,1800,2100,1800,1700]
+            }, {
+                name: '预算销售',
+                type: 'line',
+                stack: '总量',
+                label: {
+                    normal: {
+                        show: true,
+                        position: 'insideRight'
+                    }
+                },
+                data: [1000,800,1200,1700,2200,2300,2400,1900,1800,2100,1800,1700],
+                symbol: 'triangle',
+                symbolSize: 20,
+                lineStyle: {
+                    normal: {
+                        color: 'green',
+                        width: 4,
+                        type: 'dashed'
+                    }
+                }
+            }
+        ],
+    };
+    myChart3.setOption(option3);
+}else if(lx=="总体"){
+    $("#mws-bar-chart4").hide();
+    myChart3.dispose();
+    myChart3=echarts.init(document.getElementById('mws-bar-chart3'));
+    option3={
+        title: {
+            text: city+lx,
+            subtext: 'From ome',
+            left:'center'
+        },
+        tooltip : {
+            trigger: 'axis',
+            axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+                type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+            }
+        },
+        legend: {
+            data: ['booking', 'sales','rest order','delay'],
+            left:'left'
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        xAxis:  {
+            type: 'category',
+            data: ['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月']
+
+        },
+        yAxis: {
+            type: 'value'
+        },
+        series: [
+            {
+                name: 'booking',
+                type: 'bar',
+                label: {
+                    normal: {
+                        show: true,
+                        position: 'insideRight'
+                    }
+                },
+                data: [1000,800,1200,1700,2200,2300,2400,1900,1800,2100,1800,1700]
+            },
+            {
+                name: 'sales',
+                type: 'bar',
+                label: {
+                    normal: {
+                        show: true,
+                        position: 'insideRight'
+                    }
+                },
+                data: [500,800,600,700,1200,300,400,900,600,700,900,1100]
+            },
+            {
+                name: 'rest order',
+                type: 'line',
+                label: {
+                    normal: {
+                        show: true,
+                        position: 'insideRight'
+                    }
+                },
+                data: [1200,300,200,700,2200,1300,1400,1500,1600,1100,1600,1000]
+            },
+            {
+                name: 'delay',
+                type: 'line',
+                label: {
+                    normal: {
+                        show: true,
+                        position: 'insideRight'
+                    }
+                },
+                data: [900,1300,1200,1700,200,300,400,500,1000,1500,1100,1500],
+                symbol: 'triangle',
+                symbolSize: 20,
+                lineStyle: {
+                    normal: {
+                        color: 'green',
+                        width: 4,
+                        type: 'dashed'
+                    }
+                }
+            }
+        ],
+    };
+    myChart3.setOption(option3);
+}
+//结束else if
+        $("#chart3").show();
     }
 </script>
 </html>
