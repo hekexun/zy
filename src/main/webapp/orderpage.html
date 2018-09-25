@@ -366,7 +366,7 @@
                                 <div class="mws-form-row" style="margin-right: 20px">
                                     <label style="float: left;margin-right: 15px;margin-top: 5px;font-size: large">城市选择</label>
                                     <div class="mws-form-item small" style="float: left;margin-top: 5px;">
-                                        <select style="font-size:large">
+                                        <select id="select_chsh" style="font-size:large">
                                             <option>国内</option>
                                             <option>天津</option>
                                             <option>广州</option>
@@ -376,7 +376,7 @@
                                 <div class="mws-form-row"  >
                                     <label style="float: left;margin-right: 15px; margin-top: 5px;margin-left:20px;font-size: large">类型</label>
                                     <div class="mws-form-item small" style="float: left;margin-top: 5px;">
-                                        <select style="font-size:large">
+                                        <select id="select_lx" style="font-size:large">
                                             <option>总体</option>
                                             <option>订单</option>
                                             <option>销售</option>
@@ -385,8 +385,8 @@
                                         </select>
                                     </div>
                                 </div>
-                                <input id="tb2" type="button" class="mws-tooltip-n mws-button blue"  value="图表" style="background: #4386bc" onclick="showTB()" title="图表" />
-                                <input id="xx2" type="button" class="mws-tooltip-n mws-button blue" style="background: grey" style="" value="详细" onclick="showXX()" title="详细" />
+                                <input id="tb2" type="button" class="mws-tooltip-n mws-button blue"  value="图表" style="background: #4386bc" onclick="showTB2()" title="图表" />
+                                <input id="xx2" type="button" class="mws-tooltip-n mws-button blue" style="background: grey" style="" value="详细" onclick="showXX2()" title="详细" />
                             </div>
                             <div class="mws-panel grid_8" id="table2" style="display: none">
                                 <div class="mws-panel-header" >
@@ -945,5 +945,29 @@
         ]
     };
     myChart4.setOption(option4);
+    function showXX2()
+    {
+        $("#table3").show();
+        $("#chart3").hide();
+        $("#xx2").css('background-color','#4386bc');
+        $("#tb2").css('background-color','grey');
+
+    }
+    function showTB2()
+    {
+        $("#chart3").show();
+        $("#table3").hide();
+        $("#xx2").css('background-color','grey');
+        $("#tb2").css('background-color','#4386bc');
+var city=$("#select_chsh").val();
+var lx=$("#select_lx").val();
+if(city=="国内")
+{
+
+}else {
+    $("#chart4").css('height','0px');
+}
+
+    }
 </script>
 </html>
