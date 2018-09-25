@@ -947,15 +947,14 @@
     myChart4.setOption(option4);
     function showXX2()
     {
-        $("#table3").show();
-        $("#chart3").hide();
+        $("#table2").show();
+        $("#chart2").hide();
         $("#xx2").css('background-color','#4386bc');
         $("#tb2").css('background-color','grey');
 
     }
     function showTB2()
     {
-        $("#table3").hide();
         $("#xx2").css('background-color','grey');
         $("#tb2").css('background-color','#4386bc');
 var city=$("#select_chsh").val();
@@ -1366,7 +1365,9 @@ else if(lx=="销售"){
     myChart3.setOption(option3);
 }
 //结束else if
-        $("#chart3").show();
+        myChart3.resize();
+        $("#chart2").show();
+        $("#table2").hide();
     }
 </script>
 </html>
