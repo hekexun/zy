@@ -113,7 +113,7 @@
     	<!-- Logo Wrapper -->
     	<div id="mws-logo-container">
         	<div id="mws-logo-wrap">
-            	<img src="images/CY2.png" alt="mws admin" />
+            	<img src="images/CY22.png" alt="mws admin" />
 			</div>
         </div>
 
@@ -200,7 +200,7 @@
                              </div>
                                 <div class="mws-panel grid_8" id="table1" style="display: none">
                                 <div class="mws-panel-header" >
-                                    <span class="mws-i-24 i-table-1">Data Table with Numbered Pagination</span>
+                                    <span class="mws-i-24 i-table-1">数据详情</span>
                                 </div>
                                 <div class="mws-panel-body">
                                     <table class="mws-datatable-fn mws-table">
@@ -346,7 +346,7 @@
                             </div>
                             <div class="mws-panel grid_8" id="chart1">
                                 <div class="mws-panel-header">
-                                    <span class="mws-i-24 i-bar-graph">Bar Chart</span>
+                                    <span class="mws-i-24 i-bar-graph">数据图示</span>
                                 </div>
                                 <div class="mws-panel-body">
                                     <div class="mws-panel-content">
@@ -390,7 +390,7 @@
                             </div>
                             <div class="mws-panel grid_8" id="table2" style="display: none">
                                 <div class="mws-panel-header" >
-                                    <span class="mws-i-24 i-table-1">Data Table with Numbered Pagination</span>
+                                    <span class="mws-i-24 i-table-1">数据详情</span>
                                 </div>
                                 <div class="mws-panel-body">
                                     <table class="mws-datatable-fn mws-table">
@@ -536,7 +536,7 @@
                             </div>
                             <div class="mws-panel grid_8" id="chart2">
                                 <div class="mws-panel-header">
-                                    <span class="mws-i-24 i-bar-graph">Bar Chart</span>
+                                    <span class="mws-i-24 i-bar-graph">数据图示</span>
                                 </div>
                                 <div class="mws-panel-body">
                                     <div class="mws-panel-content">
@@ -550,8 +550,181 @@
                         </div>
 
                         <div id="tab-3">
-                            <p>Suspendisse lacinia euismod ligula. Nullam sed est sem, nec sodales erat. Phasellus ipsum orci, scelerisque non faucibus ac, hendrerit ut massa. Praesent ornare justo non turpis convallis sit amet porta urna adipiscing. Donec ac neque non risus tristique commodo non et neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris tincidunt augue vitae risus lacinia sed tempor ligula dapibus. Proin et turpis lacus, eget convallis risus.</p>
+                            <div style="margin-bottom: 10px; text-align:right;">
+                                <div class="mws-form-row"  >
+                                    <label style="float: left;margin-right: 15px; margin-top: 5px;margin-left:20px;font-size: large">类型</label>
+                                    <div class="mws-form-item small" style="float: left;margin-top: 5px;">
+                                        <select id="select_lx2" style="font-size:large">
+                                            <option>总体</option>
+                                            <option>订单</option>
+                                            <option>销售</option>
+                                            <option>订单残</option>
+                                            <option>编成</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <input id="tb3" type="button" class="mws-tooltip-n mws-button blue"  value="图表" style="background: #4386bc" onclick="showTB3()" title="图表" />
+                                <input id="xx3" type="button" class="mws-tooltip-n mws-button blue" style="background: grey" style="" value="详细" onclick="showXX3()" title="详细" />
+                            </div>
+                        <div class="mws-panel grid_8" id="table3" style="display: none">
+                            <div class="mws-panel-header" >
+                                <span class="mws-i-24 i-table-1">数据详情</span>
+                            </div>
+                            <div class="mws-panel-body">
+                                <table class="mws-datatable-fn mws-table">
+                                    <thead>
+                                    <tr>
+                                        <th>月份</th>
+                                        <th>booking</th>
+                                        <th>sales</th>
+                                        <th>rest order</th>
+                                        <th>delay</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr class="gradeX">
+                                        <td>2017-01</td>
+                                        <td>1000</td>
+                                        <td>2684</td>
+                                        <td class="center">11296</td>
+                                        <td class="center">776</td>
+                                    </tr>
+                                    <tr class="gradeC">
+                                        <td>2017-02</td>
+                                        <td>1001</td>
+                                        <td>2684</td>
+                                        <td class="center">11294</td>
+                                        <td class="center">775</td>
+                                    </tr>
+                                    <tr class="gradeA">
+                                        <td>2017-03</td>
+                                        <td>1005</td>
+                                        <td>2685</td>
+                                        <td class="center">11600</td>
+                                        <td class="center">774</td>
+                                    </tr>
+                                    <tr class="gradeA">
+                                        <td>2017-04</td>
+                                        <td>1006</td>
+                                        <td>2688</td>
+                                        <td class="center">11700</td>
+                                        <td class="center">775</td>
+                                    </tr>
+                                    <tr class="gradeA">
+                                        <td>2017-05</td>
+                                        <td>1008</td>
+                                        <td>2655</td>
+                                        <td class="center">105555</td>
+                                        <td class="center">885</td>
+                                    </tr>
+                                    <tr class="gradeA">
+                                        <td>2017-06</td>
+                                        <td>1002</td>
+                                        <td>2665</td>
+                                        <td class="center">10555</td>
+                                        <td class="center">886</td>
+                                    </tr>
+                                    <tr class="gradeA">
+                                        <td>2017-07</td>
+                                        <td>2888</td>
+                                        <td>10556</td>
+                                        <td class="center">10556</td>
+                                        <td class="center">688</td>
+                                    </tr>
+                                    <tr class="gradeA">
+                                        <td>2017-08</td>
+                                        <td>1006</td>
+                                        <td>2888</td>
+                                        <td class="center">10885</td>
+                                        <td class="center">799</td>
+                                    </tr>
+                                    <tr class="gradeA">
+                                        <td>2017-09</td>
+                                        <td>6333</td>
+                                        <td>2600</td>
+                                        <td class="center">10555</td>
+                                        <td class="center">855</td>
+                                    </tr>
+                                    <tr class="gradeA">
+                                        <td>2017-10</td>
+                                        <td>5222</td>
+                                        <td>6555</td>
+                                        <td class="center">19885</td>
+                                        <td class="center">799</td>
+                                    </tr>
+                                    <tr class="gradeA">
+                                        <td>2017-11</td>
+                                        <td>4575</td>
+                                        <td>7458</td>
+                                        <td class="center">5777</td>
+                                        <td class="center">44</td>
+                                    </tr>
+                                    <tr class="gradeA">
+                                        <td>2017-12</td>
+                                        <td>6444</td>
+                                        <td>8577</td>
+                                        <td class="center">86576</td>
+                                        <td class="center">7524</td>
+                                    </tr>
+                                    <tr class="gradeA">
+                                        <td>2018-01</td>
+                                        <td>9787</td>
+                                        <td>6333</td>
+                                        <td class="center">45555</td>
+                                        <td class="center">2555</td>
+                                    </tr>
+                                    <tr class="gradeA">
+                                        <td>2018-02</td>
+                                        <td>7452</td>
+                                        <td>35523</td>
+                                        <td class="center">45345</td>
+                                        <td class="center">5354</td>
+                                    </tr>
+                                    <tr class="gradeA">
+                                        <td>2018-03</td>
+                                        <td>45345</td>
+                                        <td>45345</td>
+                                        <td class="center">45345</td>
+                                        <td class="center">453</td>
+                                    </tr>
+                                    <tr class="gradeA">
+                                        <td>2018-04</td>
+                                        <td>3242</td>
+                                        <td>453453</td>
+                                        <td class="center">53453</td>
+                                        <td class="center">655</td>
+                                    </tr>
+                                    <tr class="gradeA">
+                                        <td>2018-01</td>
+                                        <td>4534</td>
+                                        <td>54343
+                                        <td class="center">4537</td>
+                                        <td class="center">753</td>
+                                    </tr>
+                                    <tr class="gradeA">
+                                        <td>2018-01</td>
+                                        <td>838</td>
+                                        <td>4533</td>
+                                        <td class="center">45343</td>
+                                        <td class="center">453</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
+                        <div class="mws-panel grid_8" id="chart3">
+                            <div class="mws-panel-header">
+                                <span class="mws-i-24 i-bar-graph">数据图示</span>
+                            </div>
+                            <div class="mws-panel-body">
+                                <div class="mws-panel-content">
+                                    <div id="mws-bar-chart5" style="width:100%; height:400px; "></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix">
+                        </div>
+                    </div>
                         <div id="tab-4">
                             <p>Suspendisse lacinia euismod ligula. Nullam sed est sem, nec sodales erat. Phasellus ipsum orci, scelerisque non faucibus ac, hendrerit ut massa. Praesent ornare justo non turpis convallis sit amet porta urna adipiscing. Donec ac neque non risus tristique commodo non et neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris tincidunt augue vitae risus lacinia sed tempor ligula dapibus. Proin et turpis lacus, eget convallis risus.</p>
                         </div>
@@ -580,8 +753,6 @@
         
     </div>
     <!-- End Main Wrapper -->
-
-
 </body>
 <script type="text/javascript">
     function showXX()
@@ -945,6 +1116,87 @@
         ]
     };
     myChart4.setOption(option4);
+    //日本图5
+    var dom5 = document.getElementById("mws-bar-chart5");
+    var myChart5 = echarts.init(dom5);
+    var option5={
+        title: {
+            text: '日本',
+            subtext: 'From dk',
+            left:'center'
+        },
+        tooltip: {
+            trigger: 'axis',
+            axisPointer: {
+                type: 'cross',
+                crossStyle: {
+                    color: '#999'
+                }
+            }
+        },
+        toolbox: {
+            feature: {
+                dataView: {show: true, readOnly: false},
+                magicType: {show: true, type: ['line', 'bar']},
+                restore: {show: true},
+                saveAsImage: {show: true}
+            }
+        },
+        legend: {
+            data:['booking','sales','rest order'],
+            left:'left'
+        },
+        xAxis: [
+            {
+                type: 'category',
+                data: ['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月'],
+                axisPointer: {
+                    type: 'shadow'
+                }
+            }
+        ],
+        yAxis: [
+            {
+                type: 'value',
+                name: '',
+                min: 8000,
+                max: 20000,
+                interval: 2000,
+                axisLabel: {
+                    formatter: '{value} '
+                }
+            },
+            {
+                type: 'value',
+                name: '',
+                min: 15000,
+                max: 35000,
+                interval: 5000,
+                axisLabel: {
+                    formatter: '{value}'
+                }
+            }
+        ],
+        series: [
+            {
+                name:'booking',
+                type:'bar',
+                data:[9000, 9500, 12900, 15000, 11000, 14000, 11000, 12000, 8000, 17000, 15000, 11000]
+            },
+            {
+                name:'sales',
+                type:'bar',
+                data:[16000, 11000,12000, 15000, 9000,14000, 12000, 12160, 18900, 17480, 15000, 10000]
+            },
+            {
+                name:'rest order',
+                type:'line',
+                yAxisIndex: 1,
+                data:[12000, 18000, 19000, 20000,19000, 23000, 22000, 20000, 15000, 16000, 17000,16000]
+            }
+        ]
+    };
+    myChart5.setOption(option5);
     function showXX2()
     {
         $("#table2").show();
@@ -955,17 +1207,18 @@
     }
     function showTB2()
     {
+        $("#chart2").show();
         $("#xx2").css('background-color','grey');
         $("#tb2").css('background-color','#4386bc');
 var city=$("#select_chsh").val();
 var lx=$("#select_lx").val();
+        $("#mws-bar-chart4").hide();
+        myChart3.dispose();
+        myChart3=echarts.init(document.getElementById('mws-bar-chart3'));
 if(city=="国内")
 {
 
 }else if(lx=="订单"){
-    $("#mws-bar-chart4").hide();
-    myChart3.dispose();
-    myChart3=echarts.init(document.getElementById('mws-bar-chart3'));
     option3={
         title: {
             text: city+lx,
@@ -1047,12 +1300,8 @@ if(city=="国内")
                 }
             ]
     };
-    myChart3.setOption(option3);
 }
 else if(lx=="销售"){
-    $("#mws-bar-chart4").hide();
-    myChart3.dispose();
-    myChart3=echarts.init(document.getElementById('mws-bar-chart3'));
     option3={
         title: {
             text: city+lx,
@@ -1153,11 +1402,7 @@ else if(lx=="销售"){
             }
         ]
     };
-    myChart3.setOption(option3);
 }else if(lx=="订单残"){
-    $("#mws-bar-chart4").hide();
-    myChart3.dispose();
-    myChart3=echarts.init(document.getElementById('mws-bar-chart3'));
     option3={
         title: {
             text: city+lx,
@@ -1249,7 +1494,7 @@ else if(lx=="销售"){
                 },
                 data: [1000,800,1200,1700,2200,2300,2400,1900,1800,2100,1800,1700]
             }, {
-                name: '预算销售',
+                name: '销售预算',
                 type: 'line',
                 stack: '总量',
                 label: {
@@ -1271,11 +1516,7 @@ else if(lx=="销售"){
             }
         ],
     };
-    myChart3.setOption(option3);
 }else if(lx=="总体"){
-    $("#mws-bar-chart4").hide();
-    myChart3.dispose();
-    myChart3=echarts.init(document.getElementById('mws-bar-chart3'));
     option3={
         title: {
             text: city+lx,
@@ -1362,12 +1603,421 @@ else if(lx=="销售"){
             }
         ],
     };
-    myChart3.setOption(option3);
 }
 //结束else if
+        myChart3.setOption(option3);
         myChart3.resize();
-        $("#chart2").show();
         $("#table2").hide();
+
+
+    }
+    function showXX3()
+    {
+
+        $("#table3").show();
+        $("#chart3").hide();
+        $("#xx3").css('background-color','#4386bc');
+        $("#tb3").css('background-color','grey');
+
+    }
+    function showTB3()
+    {
+        $("#chart3").show();
+        $("#xx3").css('background-color','grey');
+        $("#tb3").css('background-color','#4386bc');
+        var lx=$("#select_lx2").val();
+        myChart5.dispose();
+        myChart5=echarts.init(document.getElementById('mws-bar-chart5'));
+
+        if(lx=="订单"){
+            option5={
+                title: {
+                    text: lx,
+                    subtext: 'From ome',
+                    left:'center'
+                },
+                tooltip : {
+                    trigger: 'axis',
+                    axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+                        type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+                    }
+                },
+                legend: {
+                    data: ['延迟', '本月','下月','下下月'],
+                    left:'left'
+                },
+                grid: {
+                    left: '3%',
+                    right: '4%',
+                    bottom: '3%',
+                    containLabel: true
+                },
+                xAxis:  {
+                    type: 'category',
+                    data: ['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月']
+
+                },
+                yAxis: {
+                    type: 'value'
+                },
+                series: [
+                    {
+                        name: '延迟',
+                        type: 'bar',
+                        stack: '总量',
+                        label: {
+                            normal: {
+                                show: true,
+                                position: 'insideRight'
+                            }
+                        },
+                        data: [1000,800,1200,1700,2200,2300,2400,1900,1800,2100,1800,1700]
+                    },
+                    {
+                        name: '下下月',
+                        type: 'bar',
+                        stack: '总量',
+                        label: {
+                            normal: {
+                                show: true,
+                                position: 'insideRight'
+                            }
+                        },
+                        data: [500,800,600,700,1200,300,400,900,600,700,900,1100]
+                    },
+                    {
+                        name: '下月',
+                        type: 'bar',
+                        stack: '总量',
+                        label: {
+                            normal: {
+                                show: true,
+                                position: 'insideRight'
+                            }
+                        },
+                        data: [1200,300,200,700,2200,1300,1400,1500,1600,1100,1600,1000]
+                    },
+                    {
+                        name: '本月',
+                        type: 'bar',
+                        stack: '总量',
+                        label: {
+                            normal: {
+                                show: true,
+                                position: 'insideRight'
+                            }
+                        },
+                        data: [1000,800,1200,1700,2200,2300,2400,1900,1800,2100,1800,1700]
+                    }
+                ]
+            };
+        }
+        else if(lx=="销售"){
+            option5={
+                title: {
+                    text: lx,
+                    subtext: 'From ome',
+                    left:'center'
+                },
+                tooltip : {
+                    trigger: 'axis',
+                    axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+                        type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+                    }
+                },
+                legend: {
+                    data: ['销售额', '预算','延迟','OTC'],
+                    left:'left'
+                },
+                grid: {
+                    left: '3%',
+                    right: '4%',
+                    bottom: '3%',
+                    containLabel: true
+                },
+                xAxis:  {
+                    type: 'category',
+                    data: ['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月']
+
+                },
+                yAxis: {
+                    type: 'value'
+                },
+                series: [
+                    {
+                        name: '销售额',
+                        type: 'line',
+                        stack: '总量',
+                        label: {
+                            normal: {
+                                show: true,
+                                position: 'insideRight'
+                            }
+                        },
+                        data: [1000,800,1200,1700,2200,2300,2400,1900,1800,2100,1800,1700],
+                        symbol: 'triangle',
+                        symbolSize: 20,
+                        lineStyle: {
+                            normal: {
+                                color: 'green',
+                                width: 4,
+                                type: 'dashed'
+                            }
+                        }
+                    },
+                    {
+                        name: '预算',
+                        type: 'bar',
+                        stack: '总量',
+                        label: {
+                            normal: {
+                                show: true,
+                                position: 'insideRight'
+                            }
+                        },
+                        data: [500,800,600,700,1200,300,400,900,600,700,900,1100]
+                    },
+                    {
+                        name: '延迟',
+                        type:'line',
+                        smooth: true,
+                        stack: '总量',
+                        label: {
+                            normal: {
+                                show: true,
+                                position: 'insideRight'
+                            }
+                        },
+                        data: [1200,300,200,700,2200,1300,1400,1500,1600,1100,1600,1000]
+                    },
+                    {
+                        name: 'OTC',
+                        type:'line',
+                        stack: '总量',
+                        label: {
+                            normal: {
+                                show: true,
+                                position: 'insideRight'
+                            }
+                        },
+                        data: [1000,800,1200,1700,2200,2300,2400,1900,1800,2100,1800,1700],
+                        symbol: 'point',
+                        symbolSize: 20,
+                        lineStyle: {
+                            normal: {
+                                color: 'red',
+                                width: 4,
+                                type: 'dashed'
+                            }
+                        }
+                    }
+                ]
+            };
+        }else if(lx=="订单残"){
+            option5={
+                title: {
+                    text: lx,
+                    subtext: 'From ome',
+                    left:'center'
+                },
+                tooltip : {
+                    trigger: 'axis',
+                    axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+                        type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+                    }
+                },
+                legend: {
+                    data: ['延迟', '本月对象','下月期货','下下月期货','之后','销售预算'],
+                    left:'left'
+                },
+                grid: {
+                    left: '3%',
+                    right: '4%',
+                    bottom: '3%',
+                    containLabel: true
+                },
+                xAxis:  {
+                    type: 'category',
+                    data: ['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月']
+
+                },
+                yAxis: {
+                    type: 'value'
+                },
+                series: [
+                    {
+                        name: '延迟',
+                        type: 'bar',
+                        stack: '总量',
+                        label: {
+                            normal: {
+                                show: true,
+                                position: 'insideRight'
+                            }
+                        },
+                        data: [1000,800,1200,1700,2200,2300,2400,1900,1800,2100,1800,1700]
+                    },
+                    {
+                        name: '本月对象',
+                        type: 'bar',
+                        stack: '总量',
+                        label: {
+                            normal: {
+                                show: true,
+                                position: 'insideRight'
+                            }
+                        },
+                        data: [500,800,600,700,1200,300,400,900,600,700,900,1100]
+                    },
+                    {
+                        name: '下月期货',
+                        type: 'bar',
+                        stack: '总量',
+                        label: {
+                            normal: {
+                                show: true,
+                                position: 'insideRight'
+                            }
+                        },
+                        data: [1200,300,200,700,2200,1300,1400,1500,1600,1100,1600,1000]
+                    },
+                    {
+                        name: '下下月期货',
+                        type: 'bar',
+                        stack: '总量',
+                        label: {
+                            normal: {
+                                show: true,
+                                position: 'insideRight'
+                            }
+                        },
+                        data: [1000,800,1200,1700,2200,2300,2400,1900,1800,2100,1800,1700]
+                    },
+                    {
+                        name: '之后',
+                        type: 'bar',
+                        stack: '总量',
+                        label: {
+                            normal: {
+                                show: true,
+                                position: 'insideRight'
+                            }
+                        },
+                        data: [1000,800,1200,1700,2200,2300,2400,1900,1800,2100,1800,1700]
+                    }, {
+                        name: '销售预算',
+                        type: 'line',
+                        stack: '总量',
+                        label: {
+                            normal: {
+                                show: true,
+                                position: 'insideRight'
+                            }
+                        },
+                        data: [1000,800,1200,1700,2200,2300,2400,1900,1800,2100,1800,1700],
+                        symbol: 'triangle',
+                        symbolSize: 20,
+                        lineStyle: {
+                            normal: {
+                                color: 'green',
+                                width: 4,
+                                type: 'dashed'
+                            }
+                        }
+                    }
+                ],
+            };
+        }else if(lx=="总体"){
+            option5={
+                title: {
+                    text: lx,
+                    subtext: 'From ome',
+                    left:'center'
+                },
+                tooltip : {
+                    trigger: 'axis',
+                    axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+                        type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+                    }
+                },
+                legend: {
+                    data: ['booking', 'sales','rest order','delay'],
+                    left:'left'
+                },
+                grid: {
+                    left: '3%',
+                    right: '4%',
+                    bottom: '3%',
+                    containLabel: true
+                },
+                xAxis:  {
+                    type: 'category',
+                    data: ['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月']
+
+                },
+                yAxis: {
+                    type: 'value'
+                },
+                series: [
+                    {
+                        name: 'booking',
+                        type: 'bar',
+                        label: {
+                            normal: {
+                                show: true,
+                                position: 'insideRight'
+                            }
+                        },
+                        data: [1000,800,1200,1700,2200,2300,2400,1900,1800,2100,1800,1700]
+                    },
+                    {
+                        name: 'sales',
+                        type: 'bar',
+                        label: {
+                            normal: {
+                                show: true,
+                                position: 'insideRight'
+                            }
+                        },
+                        data: [500,800,600,700,1200,300,400,900,600,700,900,1100]
+                    },
+                    {
+                        name: 'rest order',
+                        type: 'line',
+                        label: {
+                            normal: {
+                                show: true,
+                                position: 'insideRight'
+                            }
+                        },
+                        data: [1200,300,200,700,2200,1300,1400,1500,1600,1100,1600,1000]
+                    },
+                    {
+                        name: 'delay',
+                        type: 'line',
+                        label: {
+                            normal: {
+                                show: true,
+                                position: 'insideRight'
+                            }
+                        },
+                        data: [900,1300,1200,1700,200,300,400,500,1000,1500,1100,1500],
+                        symbol: 'triangle',
+                        symbolSize: 20,
+                        lineStyle: {
+                            normal: {
+                                color: 'green',
+                                width: 4,
+                                type: 'dashed'
+                            }
+                        }
+                    }
+                ],
+            };
+        }
+//结束else if
+        myChart5.setOption(option5);
+        $("#table3").hide();
     }
 </script>
 </html>
