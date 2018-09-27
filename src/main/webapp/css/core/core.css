@@ -147,7 +147,7 @@ div#mws-user-tools #mws-user-info #mws-user-functions ul li
 div#mws-user-tools #mws-user-info #mws-user-functions ul li a
 {
 	text-decoration:none;
-	color:#ffffff;
+	color:#000000;
 }
 
 div#mws-user-tools #mws-user-info #mws-user-functions ul li a:hover
@@ -380,7 +380,7 @@ div#mws-sidebar-bg
 	left:0;
 	z-index:0;
 	width:200px;
-	background:url(../../images/core/mws-sidebar-bg.png);
+	background:url(../../images/core/mws-body-bg.png);
 }
 
 /* Search Box */
@@ -399,7 +399,7 @@ div#mws-searchbox .mws-search-input
 	float:left;
 	border:none;
 	outline:none;
-	color:#ffffff;
+	color:#000000;
 }
 
 div#mws-searchbox .mws-search-submit
@@ -440,14 +440,14 @@ div#mws-navigation ul
 div#mws-navigation ul li
 {
 	position:relative;
-	border-top:1px solid #535755;
-	border-bottom:1px solid #18191d;
+	border-top:1px solid #eeeff0;
+	border-bottom:1px solid #9e9e9e;
 }
 
 div#mws-navigation ul li a, 
 div#mws-navigation ul li span
 {
-	color:#ffffff;
+	color:#000000;
 	outline:none;
 	display:block;
 	text-decoration:none;
@@ -514,7 +514,7 @@ div#mws-navigation ul li ul li span
 	display:block;
 	font-size:12px;
 	padding:4px 0 4px 40px;
-	color:#ffffff !important;
+	color:#000000 !important;
 	text-shadow:none;
 }
 
