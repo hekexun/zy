@@ -191,177 +191,258 @@
                 <div class="mws-panel grid_4" style="width: 100%" >
                     <div class="mws-tabs" >
                         <ul style="background: grey">
-                            <li><a href="#tab-1">全体</a></li>
-                            <li><a href="#tab-2">国内</a></li>
-                            <li><a href="#tab-3">日本</a></li>
-                            <li><a href="#tab-4">SCL</a></li>
-                            <li><a href="#tab-5">海外</a></li>
-                            <li><a href="#tab-6">每日报告书</a></li>
-                            <li><a href="#tab-7">预算</a></li>
+                            <li><a href="#tab-1">装箱单</a></li>
+                            <li><a href="#tab-2">订舱委托</a></li>
+                            <li><a href="#tab-3">分箱单</a></li>
+                            <li><a href="#tab-4">合同</a></li>
+                            <li><a href="#tab-5">发票</a></li>
+                            <li><a href="#tab-6">箱单</a></li>
+                            <li><a href="#tab-7">报关单</a></li>
+                            <li><a href="#tab-8">申报要素</a></li>
                         </ul>
 
                         <div id="tab-1" style="height:auto">
                           <div style="margin-bottom: 10px; text-align:right;">
-                            <input id="tb1" type="button" class="mws-tooltip-n mws-button blue"  value="图表" style="background: #4386bc" onclick="showTB()" title="图表" />
-                              <input id="xx1" type="button" class="mws-tooltip-n mws-button blue" style="background: grey" style="" value="详细" onclick="showXX()" title="详细" />
+                            <input id="tb1" type="button" class="mws-tooltip-n mws-button blue"  value="下载" style="background: #4386bc" onclick="showTB()" title="下载" />
+                              <input id="xx1" type="button" class="mws-tooltip-n mws-button blue" style="background: grey" style="" value="取消" onclick="showXX()" title="取消" />
                              </div>
-                                <div class="mws-panel grid_8" id="table1" style="display: none">
+                                <div class="mws-panel grid_8" id="table1">
                                 <div class="mws-panel-header" >
-                                    <span class="mws-i-24 i-table-1">数据详情</span>
+                                    <span class="mws-i-24 i-table-1">PGN 系统数据 15-35</span>
                                 </div>
                                 <div class="mws-panel-body">
                                     <table class="mws-datatable-fn mws-table">
                                         <thead>
                                         <tr>
-                                            <th>月份</th>
-                                            <th>booking</th>
-                                            <th>sales</th>
-                                            <th>rest order</th>
-                                            <th>delay</th>
+                                            <th>PKG NO. </th>
+                                            <th>P.O. </th>
+                                            <th>CARD NO. </th>
+                                            <th>SALES ORDER </th>
+                                            <th>QTY </th>
                                         </tr>
                                         </thead>
                                         <tbody>
                                         <tr class="gradeX">
-                                            <td>2017-01</td>
-                                            <td>1000</td>
-                                            <td>2684</td>
-                                            <td class="center">11296</td>
-                                            <td class="center">776</td>
+                                            <td>PCTK628450</td>
+                                            <td>TCHCTK500093062</td>
+                                            <td>CCTK622102</td>
+                                            <td class="center">CTK5B278-062</td>
+                                            <td class="center">25</td>
                                         </tr>
-                                        <tr class="gradeC">
-                                            <td>2017-02</td>
-                                            <td>1001</td>
-                                            <td>2684</td>
-                                            <td class="center">11294</td>
-                                            <td class="center">775</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>2017-03</td>
-                                            <td>1005</td>
-                                            <td>2685</td>
-                                            <td class="center">11600</td>
-                                            <td class="center">774</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>2017-04</td>
-                                            <td>1006</td>
-                                            <td>2688</td>
-                                            <td class="center">11700</td>
-                                            <td class="center">775</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>2017-05</td>
-                                            <td>1008</td>
-                                            <td>2655</td>
-                                            <td class="center">105555</td>
-                                            <td class="center">885</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>2017-06</td>
-                                            <td>1002</td>
-                                            <td>2665</td>
-                                            <td class="center">10555</td>
-                                            <td class="center">886</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>2017-07</td>
-                                            <td>2888</td>
-                                            <td>10556</td>
-                                            <td class="center">10556</td>
-                                            <td class="center">688</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>2017-08</td>
-                                            <td>1006</td>
-                                            <td>2888</td>
-                                            <td class="center">10885</td>
-                                            <td class="center">799</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>2017-09</td>
-                                            <td>6333</td>
-                                            <td>2600</td>
-                                            <td class="center">10555</td>
-                                            <td class="center">855</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>2017-10</td>
-                                            <td>5222</td>
-                                            <td>6555</td>
-                                            <td class="center">19885</td>
-                                            <td class="center">799</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>2017-11</td>
-                                            <td>4575</td>
-                                            <td>7458</td>
-                                            <td class="center">5777</td>
-                                            <td class="center">44</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>2017-12</td>
-                                            <td>6444</td>
-                                            <td>8577</td>
-                                            <td class="center">86576</td>
-                                            <td class="center">7524</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>2018-01</td>
-                                            <td>9787</td>
-                                            <td>6333</td>
-                                            <td class="center">45555</td>
-                                            <td class="center">2555</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>2018-02</td>
-                                            <td>7452</td>
-                                            <td>35523</td>
-                                            <td class="center">45345</td>
-                                            <td class="center">5354</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>2018-03</td>
-                                            <td>45345</td>
-                                            <td>45345</td>
-                                            <td class="center">45345</td>
-                                            <td class="center">453</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>2018-04</td>
-                                            <td>3242</td>
-                                            <td>453453</td>
-                                            <td class="center">53453</td>
-                                            <td class="center">655</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>2018-01</td>
-                                            <td>4534</td>
-                                            <td>54343
-                                            <td class="center">4537</td>
-                                            <td class="center">753</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>2018-01</td>
-                                            <td>838</td>
-                                            <td>4533</td>
-                                            <td class="center">45343</td>
-                                            <td class="center">453</td>
+                                        <tr class="gradeX">
+                                            <td>PCTK628342</td>
+                                            <td>TCHCTK500093234</td>
+                                            <td>CCTK622123</td>
+                                            <td class="center">CTK5B278-234</td>
+                                            <td class="center">6</td>
+                                        </tr><tr class="gradeX">
+                                            <td>PCTK628421</td>
+                                            <td>TCHCTK500093043</td>
+                                            <td>CCTK622143</td>
+                                            <td class="center">CTK5B278-642</td>
+                                            <td class="center">3</td>
+                                        </tr><tr class="gradeX">
+                                            <td>PCTK628234</td>
+                                            <td>TCHCTK500093046</td>
+                                            <td>CCTK622134</td>
+                                            <td class="center">CTK5B278-023</td>
+                                            <td class="center">4</td>
+                                        </tr><tr class="gradeX">
+                                            <td>PCTK628423</td>
+                                            <td>TCHCTK5000930234</td>
+                                            <td>CCTK622342</td>
+                                            <td class="center">CTK5B278-062</td>
+                                            <td class="center">6</td>
+                                        </tr><tr class="gradeX">
+                                            <td>PCTK6284234</td>
+                                            <td>TCHCTK5000930243</td>
+                                            <td>CCTK6222342</td>
+                                            <td class="center">CTK5B278-0234</td>
+                                            <td class="center">15</td>
+                                        </tr><tr class="gradeX">
+                                            <td>PCTK623450</td>
+                                            <td>TCHCTK500093342</td>
+                                            <td>CCTK622142</td>
+                                            <td class="center">CTK5B278-065</td>
+                                            <td class="center">21</td>
+                                        </tr><tr class="gradeX">
+                                            <td>PCTK628434</td>
+                                            <td>TCHCTK500093062</td>
+                                            <td>CCTK623402</td>
+                                            <td class="center">CTK5B278-342</td>
+                                            <td class="center">25</td>
+                                        </tr><tr class="gradeX">
+                                            <td>PCTK628450</td>
+                                            <td>TCHCTK500093062</td>
+                                            <td>CCTK622102</td>
+                                            <td class="center">CTK5B278-062</td>
+                                            <td class="center">25</td>
+                                        </tr><tr class="gradeX">
+                                            <td>PCTK628450</td>
+                                            <td>TCHCTK500093062</td>
+                                            <td>CCTK622102</td>
+                                            <td class="center">CTK5B278-062</td>
+                                            <td class="center">25</td>
+                                        </tr><tr class="gradeX">
+                                            <td>PCTK628450</td>
+                                            <td>TCHCTK500093062</td>
+                                            <td>CCTK622102</td>
+                                            <td class="center">CTK5B278-062</td>
+                                            <td class="center">25</td>
+                                        </tr><tr class="gradeX">
+                                            <td>PCTK628450</td>
+                                            <td>TCHCTK500093062</td>
+                                            <td>CCTK622102</td>
+                                            <td class="center">CTK5B278-062</td>
+                                            <td class="center">25</td>
+                                        </tr><tr class="gradeX">
+                                            <td>PCTK628450</td>
+                                            <td>TCHCTK500093062</td>
+                                            <td>CCTK622102</td>
+                                            <td class="center">CTK5B278-062</td>
+                                            <td class="center">25</td>
+                                        </tr><tr class="gradeX">
+                                            <td>PCTK628450</td>
+                                            <td>TCHCTK500093062</td>
+                                            <td>CCTK622102</td>
+                                            <td class="center">CTK5B278-062</td>
+                                            <td class="center">25</td>
+                                        </tr><tr class="gradeX">
+                                            <td>PCTK628450</td>
+                                            <td>TCHCTK500093062</td>
+                                            <td>CCTK622102</td>
+                                            <td class="center">CTK5B278-062</td>
+                                            <td class="center">25</td>
+                                        </tr><tr class="gradeX">
+                                            <td>PCTK628450</td>
+                                            <td>TCHCTK500093062</td>
+                                            <td>CCTK622102</td>
+                                            <td class="center">CTK5B278-062</td>
+                                            <td class="center">25</td>
+                                        </tr><tr class="gradeX">
+                                            <td>PCTK628450</td>
+                                            <td>TCHCTK500093062</td>
+                                            <td>CCTK622102</td>
+                                            <td class="center">CTK5B278-062</td>
+                                            <td class="center">25</td>
+                                        </tr><tr class="gradeX">
+                                            <td>PCTK628450</td>
+                                            <td>TCHCTK500093062</td>
+                                            <td>CCTK622102</td>
+                                            <td class="center">CTK5B278-062</td>
+                                            <td class="center">25</td>
+                                        </tr><tr class="gradeX">
+                                            <td>PCTK628450</td>
+                                            <td>TCHCTK500093062</td>
+                                            <td>CCTK622102</td>
+                                            <td class="center">CTK5B278-062</td>
+                                            <td class="center">25</td>
+                                        </tr><tr class="gradeX">
+                                            <td>PCTK628450</td>
+                                            <td>TCHCTK500093062</td>
+                                            <td>CCTK622102</td>
+                                            <td class="center">CTK5B278-062</td>
+                                            <td class="center">25</td>
+                                        </tr><tr class="gradeX">
+                                            <td>PCTK628450</td>
+                                            <td>TCHCTK500093062</td>
+                                            <td>CCTK622102</td>
+                                            <td class="center">CTK5B278-062</td>
+                                            <td class="center">25</td>
                                         </tr>
                                         </tbody>
                                     </table>
                                 </div>
                             </div>
-                            <div class="mws-panel grid_8" id="chart1">
+                            <div class="mws-panel grid_8">
                                 <div class="mws-panel-header">
-                                    <span class="mws-i-24 i-bar-graph">数据图示</span>
+                                    <span class="mws-i-24 i-eyedropper">装箱单</span>
                                 </div>
                                 <div class="mws-panel-body">
-                                    <div class="mws-panel-content">
-                                        <div id="mws-bar-chart1" style="width:100%; height:400px; "></div>
-                                        <div id="mws-bar-chart2" style="width:100%; height:400px; "></div>
-                                    </div>
+                                    <form id="mws-validate" class="mws-form" action="http://www.malijuwebshop.com/themes/mws-admin/form_elements.html">
+                                        <div id="mws-validate-error" class="mws-form-message error" style="display:none;"></div>
+                                        <div class="mws-form-inline">
+                                            <div class="mws-form-row" style="float: left;">
+                                                <label style="width:auto;font-size: 20px;margin-top: 5px;margin-left: 5px" >国别</label>
+                                                <div class="mws-form-item large" style="float: left;margin-top: 5px;margin-left: 1px">
+                                                    <select  style="font-size:large">
+                                                        <option>  </option>
+                                                        <option>中国</option>
+                                                        <option>日本</option>
+                                                        <option>印尼</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="mws-form-row" style="float: left;">
+                                                <label style="width:auto;font-size: 20px;margin-top: 5px;margin-left: 5px" >代码</label>
+                                                <div class="mws-form-item large" style="float: left;margin-top: 5px;margin-left: 1px">
+                                                    <select  style="font-size:large">
+                                                        <option>  </option>
+                                                        <option>PKGTG007</option>
+                                                        <option>PKGTG007</option>
+                                                        <option>PKGTG007</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="mws-form-row" style="float: left;">
+                                                <label style="width:auto;font-size: 20px;margin-top: 5px;margin-left: 5px" >运输方式</label>
+                                                <div class="mws-form-item large" style="float: left;margin-top: 5px;margin-left: 1px">
+                                                    <select  style="font-size:large">
+                                                        <option>  </option>
+                                                        <option>航空</option>
+                                                        <option>海运</option>
+                                                        <option>货运</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="mws-form-row" style="float: left;">
+                                                <label style="width:auto;font-size: 20px;margin-top: 5px;margin-left: 5px" >日期</label>
+                                                <div class="mws-form-item large" style="float: left;margin-top: 5px;margin-left: 1px">
+                                                        <input type="text" class="mws-textinput mws-datepicker" style="font-size: large" />
+                                                </div>
+                                            </div>
+                                            <div class="mws-form-row" style="clear:both;">
+                                            </div>
+                                            <div class="mws-form-row" >
+                                                <label style="width:auto;font-size: 30px;margin-top: 5px;margin-left: 5px" >TOTAL:</label>
+                                                <div style="float: left;margin-left: 20px">
+                                                    <div class="mws-form-row" style="float: left;">
+                                                        <label style="width:auto;font-size: large;margin-top: 5px;margin-left: 5px" >件数</label>
+                                                        <div class="mws-form-item large" style="float: left;margin-top: 5px;margin-left: 1px">
+                                                            <input type="text" class="mws-textinput" disabled="disabled" value="1532" style="font-size: large" />
+                                                        </div>
+                                                        <label style="width:auto;font-size: large;margin-top: 5px;margin-left: 5px" >PKGS</label>
+                                                    </div>
+                                                    <div class="mws-form-row" style="float: left;">
+                                                        <div class="mws-form-item large" style="float: left;margin-top: 5px;margin-left: 1px">
+                                                            <input type="text" class="mws-textinput" disabled="disabled" value="2451" style="font-size: large" />
+                                                        </div>
+                                                        <label style="width:auto;font-size: large;margin-top: 5px;margin-left: 15px" >W1</label>
+                                                    </div>
+                                                    <DIV STYLE="clear: both;"></DIV>
+                                                    <div class="mws-form-row" style="float: left;">
+                                                        <label style="width:auto;font-size: large;margin-top: 5px;margin-left: 5px" >件数</label>
+                                                        <div class="mws-form-item large" style="float: left;margin-top: 5px;margin-left: 1px">
+                                                            <input type="text" class="mws-textinput" disabled="disabled" value="1532" style="font-size: large" />
+                                                        </div>
+                                                        <label style="width:auto;font-size: large;margin-top: 5px;margin-left: 5px" >PKGS</label>
+                                                    </div>
+                                                    <div class="mws-form-row" style="float: left;">
+                                                        <div class="mws-form-item large" style="float: left;margin-top: 5px;margin-left: 1px">
+                                                            <input type="text" class="mws-textinput" disabled="disabled" value="2451" style="font-size: large" />
+                                                        </div>
+                                                        <label style="width:auto;font-size: large;margin-top: 5px;margin-left: 15px" >W1</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mws-button-row">
+                                            <input type="submit" class="mws-button red" />
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
+
                             <div class="clearfix">
                         </div>
 
@@ -742,6 +823,9 @@
                             <p>Suspendisse lacinia euismod ligula. Nullam sed est sem, nec sodales erat. Phasellus ipsum orci, scelerisque non faucibus ac, hendrerit ut massa. Praesent ornare justo non turpis convallis sit amet porta urna adipiscing. Donec ac neque non risus tristique commodo non et neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris tincidunt augue vitae risus lacinia sed tempor ligula dapibus. Proin et turpis lacus, eget convallis risus.</p>
                         </div>
                         <div id="tab-7">
+                            <p>Suspendisse lacinia euismod ligula. Nullam sed est sem, nec sodales erat. Phasellus ipsum orci, scelerisque non faucibus ac, hendrerit ut massa. Praesent ornare justo non turpis convallis sit amet porta urna adipiscing. Donec ac neque non risus tristique commodo non et neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris tincidunt augue vitae risus lacinia sed tempor ligula dapibus. Proin et turpis lacus, eget convallis risus.</p>
+                        </div>
+                        <div id="tab-8">
                             <p>Suspendisse lacinia euismod ligula. Nullam sed est sem, nec sodales erat. Phasellus ipsum orci, scelerisque non faucibus ac, hendrerit ut massa. Praesent ornare justo non turpis convallis sit amet porta urna adipiscing. Donec ac neque non risus tristique commodo non et neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris tincidunt augue vitae risus lacinia sed tempor ligula dapibus. Proin et turpis lacus, eget convallis risus.</p>
                         </div>
                     </div>
@@ -1414,7 +1498,7 @@ else if(lx=="销售"){
         title: {
             text: city+lx,
             subtext: 'From ome',
-            left:'right'
+            left:'center'
         },
         tooltip : {
             trigger: 'axis',
