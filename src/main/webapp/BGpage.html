@@ -407,37 +407,53 @@
                                                 <label style="width:auto;font-size: 30px;margin-top: 5px;margin-left: 5px" >TOTAL:</label>
                                                 <div style="float: left;margin-left: 20px">
                                                     <div class="mws-form-row" style="float: left;">
-                                                        <label style="width:auto;font-size: large;margin-top: 5px;margin-left: 5px" >件数</label>
+                                                        <label style="width: 40px;font-size: large;vertical-align:center;margin-top: 5px;margin-left: 5px" >件数</label>
                                                         <div class="mws-form-item large" style="float: left;margin-top: 5px;margin-left: 1px">
                                                             <input type="text" class="mws-textinput" disabled="disabled" value="1532" style="font-size: large" />
                                                         </div>
-                                                        <label style="width:auto;font-size: large;margin-top: 5px;margin-left: 5px" >PKGS</label>
+                                                        <label style="width: 40px;font-size: large;vertical-align:center;margin-top: 5px;margin-left: 5px" >PKGS</label>
                                                     </div>
                                                     <div class="mws-form-row" style="float: left;">
                                                         <div class="mws-form-item large" style="float: left;margin-top: 5px;margin-left: 1px">
                                                             <input type="text" class="mws-textinput" disabled="disabled" value="2451" style="font-size: large" />
                                                         </div>
-                                                        <label style="width:auto;font-size: large;margin-top: 5px;margin-left: 15px" >W1</label>
+                                                        <label style="width: 40px;font-size: large;vertical-align:center;margin-top: 5px;margin-left: 5px"  >W1</label>
                                                     </div>
                                                     <DIV STYLE="clear: both;"></DIV>
                                                     <div class="mws-form-row" style="float: left;">
-                                                        <label style="width:auto;font-size: large;margin-top: 5px;margin-left: 5px" >件数</label>
+                                                        <label style="width: 40px;font-size: large;vertical-align:center;margin-top: 5px;margin-left: 5px"  >毛重</label>
                                                         <div class="mws-form-item large" style="float: left;margin-top: 5px;margin-left: 1px">
                                                             <input type="text" class="mws-textinput" disabled="disabled" value="1532" style="font-size: large" />
                                                         </div>
-                                                        <label style="width:auto;font-size: large;margin-top: 5px;margin-left: 5px" >PKGS</label>
+                                                        <label style="width: 40px;font-size: large;vertical-align:center;margin-top: 5px;margin-left: 5px"  >KGS</label>
                                                     </div>
                                                     <div class="mws-form-row" style="float: left;">
                                                         <div class="mws-form-item large" style="float: left;margin-top: 5px;margin-left: 1px">
                                                             <input type="text" class="mws-textinput" disabled="disabled" value="2451" style="font-size: large" />
                                                         </div>
-                                                        <label style="width:auto;font-size: large;margin-top: 5px;margin-left: 15px" >W1</label>
+                                                        <label style="width: 40px;font-size: large;vertical-align:center;margin-top: 5px;margin-left: 5px" >W3</label>
+                                                    </div>
+                                                    <DIV STYLE="clear: both;"></DIV>
+                                                    <div class="mws-form-row" style="float: left;">
+                                                        <label style="width: 40px;font-size: large;vertical-align:center;margin-top: 5px;margin-left: 5px"  >体积</label>
+                                                        <div class="mws-form-item large" style="float: left;margin-top: 5px;margin-left: 1px">
+                                                            <input type="text" class="mws-textinput" disabled="disabled" value="1532" style="font-size: large" />
+                                                        </div>
+                                                        <label style="width: 40px;font-size: large;vertical-align:center;margin-top: 5px;margin-left: 5px"  >M3</label>
+                                                    </div>
+                                                    <div class="mws-form-row" style="float: left;">
+                                                        <div class="mws-form-item large" style="float: left;margin-top: 5px;margin-left: 1px">
+                                                            <input type="text" class="mws-textinput" disabled="disabled" value="2451" style="font-size: large" />
+                                                        </div>
+                                                        <label style="width: 40px;font-size: large;vertical-align:center;margin-top: 5px;margin-left: 5px"  >K1</label>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="mws-button-row">
-                                            <input type="submit" class="mws-button red" />
+                                            <input type="submit" class="mws-button gray" VALUE="上一页"/>
+                                            <input type="submit" class="mws-button blue" VALUE="保存"/>
+                                            <input type="submit" class="mws-button red" value="保存并下一页"/>
                                         </div>
                                     </form>
                                 </div>
@@ -450,189 +466,164 @@
                         </div>
 
                         <div id="tab-2">
-                            <div style="margin-bottom: 10px; text-align:right;">
-                                <div class="mws-form-row" style="margin-right: 20px">
-                                    <label style="float: left;margin-right: 15px;margin-top: 5px;font-size: large">城市选择</label>
-                                    <div class="mws-form-item small" style="float: left;margin-top: 5px;">
-                                        <select id="select_chsh" style="font-size:large">
-                                            <option>国内</option>
-                                            <option>天津</option>
-                                            <option>广州</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="mws-form-row"  >
-                                    <label style="float: left;margin-right: 15px; margin-top: 5px;margin-left:20px;font-size: large">类型</label>
-                                    <div class="mws-form-item small" style="float: left;margin-top: 5px;">
-                                        <select id="select_lx" style="font-size:large">
-                                            <option>总体</option>
-                                            <option>订单</option>
-                                            <option>销售</option>
-                                            <option>订单残</option>
-                                            <option>编成</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <input id="tb2" type="button" class="mws-tooltip-n mws-button blue"  value="图表" style="background: #4386bc" onclick="showTB2()" title="图表" />
-                                <input id="xx2" type="button" class="mws-tooltip-n mws-button blue" style="background: grey" style="" value="详细" onclick="showXX2()" title="详细" />
-                            </div>
-                            <div class="mws-panel grid_8" id="table2" style="display: none">
-                                <div class="mws-panel-header" >
-                                    <span class="mws-i-24 i-table-1">数据详情</span>
-                                </div>
-                                <div class="mws-panel-body">
-                                    <table class="mws-datatable-fn mws-table">
-                                        <thead>
-                                        <tr>
-                                            <th>月份</th>
-                                            <th>booking</th>
-                                            <th>sales</th>
-                                            <th>rest order</th>
-                                            <th>delay</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                        <tr class="gradeX">
-                                            <td>2017-01</td>
-                                            <td>1000</td>
-                                            <td>2684</td>
-                                            <td class="center">11296</td>
-                                            <td class="center">776</td>
-                                        </tr>
-                                        <tr class="gradeC">
-                                            <td>2017-02</td>
-                                            <td>1001</td>
-                                            <td>2684</td>
-                                            <td class="center">11294</td>
-                                            <td class="center">775</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>2017-03</td>
-                                            <td>1005</td>
-                                            <td>2685</td>
-                                            <td class="center">11600</td>
-                                            <td class="center">774</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>2017-04</td>
-                                            <td>1006</td>
-                                            <td>2688</td>
-                                            <td class="center">11700</td>
-                                            <td class="center">775</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>2017-05</td>
-                                            <td>1008</td>
-                                            <td>2655</td>
-                                            <td class="center">105555</td>
-                                            <td class="center">885</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>2017-06</td>
-                                            <td>1002</td>
-                                            <td>2665</td>
-                                            <td class="center">10555</td>
-                                            <td class="center">886</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>2017-07</td>
-                                            <td>2888</td>
-                                            <td>10556</td>
-                                            <td class="center">10556</td>
-                                            <td class="center">688</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>2017-08</td>
-                                            <td>1006</td>
-                                            <td>2888</td>
-                                            <td class="center">10885</td>
-                                            <td class="center">799</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>2017-09</td>
-                                            <td>6333</td>
-                                            <td>2600</td>
-                                            <td class="center">10555</td>
-                                            <td class="center">855</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>2017-10</td>
-                                            <td>5222</td>
-                                            <td>6555</td>
-                                            <td class="center">19885</td>
-                                            <td class="center">799</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>2017-11</td>
-                                            <td>4575</td>
-                                            <td>7458</td>
-                                            <td class="center">5777</td>
-                                            <td class="center">44</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>2017-12</td>
-                                            <td>6444</td>
-                                            <td>8577</td>
-                                            <td class="center">86576</td>
-                                            <td class="center">7524</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>2018-01</td>
-                                            <td>9787</td>
-                                            <td>6333</td>
-                                            <td class="center">45555</td>
-                                            <td class="center">2555</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>2018-02</td>
-                                            <td>7452</td>
-                                            <td>35523</td>
-                                            <td class="center">45345</td>
-                                            <td class="center">5354</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>2018-03</td>
-                                            <td>45345</td>
-                                            <td>45345</td>
-                                            <td class="center">45345</td>
-                                            <td class="center">453</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>2018-04</td>
-                                            <td>3242</td>
-                                            <td>453453</td>
-                                            <td class="center">53453</td>
-                                            <td class="center">655</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>2018-01</td>
-                                            <td>4534</td>
-                                            <td>54343
-                                            <td class="center">4537</td>
-                                            <td class="center">753</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>2018-01</td>
-                                            <td>838</td>
-                                            <td>4533</td>
-                                            <td class="center">45343</td>
-                                            <td class="center">453</td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="mws-panel grid_8" id="chart2">
+                            <div class="mws-panel grid_8">
                                 <div class="mws-panel-header">
-                                    <span class="mws-i-24 i-bar-graph">数据图示</span>
+                                    <span class="mws-i-24 i-eyedropper">订舱委托</span>
                                 </div>
                                 <div class="mws-panel-body">
-                                    <div class="mws-panel-content">
-                                        <div id="mws-bar-chart3" style="width:100%; height:400px; "></div>
-                                        <div id="mws-bar-chart4" style="width:100%; height:400px; "></div>
-                                    </div>
+                                    <form id="mws-validate" class="mws-form" action="http://www.malijuwebshop.com/themes/mws-admin/form_elements.html">
+                                        <div id="mws-validate-error" class="mws-form-message error" style="display:none;"></div>
+                                        <div class="mws-form-inline">
+                                            <div class="mws-form-row" style="float: left;">
+                                                <label style="width:auto;font-size: 20px;margin-top: 5px;margin-left: 5px" >发货人</label>
+                                                <div class="mws-form-item large" style="float: left;margin-top: 5px;margin-left: 1px">
+                                                    <select  style="font-size:large">
+                                                        <option>  </option>
+                                                        <option>李立</option>
+                                                        <option>广州</option>
+                                                        <option>天津</option>
+                                                        <option>日本</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="mws-form-row" style="float: left;">
+                                                <label style="width:auto;font-size: 20px;margin-top: 5px;margin-left: 5px" >收货人</label>
+                                                <div class="mws-form-item large" style="float: left;margin-top: 5px;margin-left: 1px">
+                                                    <select  style="font-size:large">
+                                                        <option>  </option>
+                                                        <option>李立</option>
+                                                        <option>广州</option>
+                                                        <option>天津</option>
+                                                        <option>日本</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="mws-form-row" style="float: left;">
+                                                <label style="width:auto;font-size: 20px;margin-top: 5px;margin-left: 5px" >通知方</label>
+                                                <div class="mws-form-item large" style="float: left;margin-top: 5px;margin-left: 1px">
+                                                    <select  style="font-size:large">
+                                                        <option>  </option>
+                                                        <option>李立</option>
+                                                        <option>广州</option>
+                                                        <option>天津</option>
+                                                        <option>日本</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="mws-form-row" style="float: left;">
+                                                <label style="width:auto;font-size: 20px;margin-top: 5px;margin-left: 5px" >装货港</label>
+                                                <div class="mws-form-item large" style="float: left;margin-top: 5px;margin-left: 1px">
+                                                    <select  style="font-size:large">
+                                                        <option>  </option>
+                                                        <option>广州</option>
+                                                        <option>青岛</option>
+                                                        <option>上海</option>
+                                                        <option>天津</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="mws-form-row" style="float: left;">
+                                                <label style="width:auto;font-size: 20px;margin-top: 5px;margin-left: 5px" >卸货港</label>
+                                                <div class="mws-form-item large" style="float: left;margin-top: 5px;margin-left: 1px">
+                                                    <select  style="font-size:large">
+                                                        <option>  </option>
+                                                        <option>广州</option>
+                                                        <option>青岛</option>
+                                                        <option>上海</option>
+                                                        <option>天津</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="mws-form-row" style="float: left;">
+                                                <label style="width:auto;font-size: 20px;margin-top: 5px;margin-left: 5px" >长宽高</label>
+                                                <div class="mws-form-item large" style="float: left;margin-top: 5px;margin-left: 1px">
+                                                    <select  style="font-size:large">
+                                                        <option>  </option>
+                                                        <option>34</option>
+                                                        <option>44</option>
+                                                        <option>45</option>
+                                                        <option>67</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="mws-form-row" style="float: left;">
+                                                <label style="width:auto;font-size: 20px;margin-top: 5px;margin-left: 5px" >货描</label>
+                                                <div class="mws-form-item large" style="float: left;margin-top: 5px;margin-left: 1px">
+                                                    <select  style="font-size:large">
+                                                        <option>  </option>
+                                                        <option>RED-E</option>
+                                                        <option>RED-T</option>
+                                                        <option>RED-D</option>
+                                                        <option>RED-Z</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="mws-form-row" style="float: left;">
+                                                <label style="width:auto;font-size: 20px;margin-top: 5px;margin-left: 5px" >代理商</label>
+                                                <div class="mws-form-item large" style="float: left;margin-top: 5px;margin-left: 1px">
+                                                    <select  style="font-size:large">
+                                                        <option>  </option>
+                                                        <option>OME</option>
+                                                        <option>RiCH</option>
+                                                        <option>Ko-E</option>
+                                                        <option>OB-Z</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="mws-form-row" style="clear:both;border-top: 1px dashed #000">
+                                            </div>
+                                            <div class="mws-form-row" style="float: left;">
+                                                <label style="width:auto;font-size: 20px;margin-top: 5px;margin-left: 5px" >唛头</label>
+                                                <div class="mws-form-item large" style="float: left;margin-top: 5px;margin-left: 1px">
+                                                    <input type="text" class="mws-textinput"   style="font-size: large;width:200px;" />
+                                                </div>
+                                            </div>
+                                            <div class="mws-form-row" style="float: left;">
+                                                <label style="width:auto;font-size: 20px;margin-top: 5px;margin-left: 5px" >发票号</label>
+                                                <div class="mws-form-item large" style="float: left;margin-top: 5px;margin-left: 1px">
+                                                    <input type="text" class="mws-textinput"   style="width:200px;font-size: large" />
+                                                </div>
+                                            </div>
+                                            <div class="mws-form-row" style="float: left;">
+                                                <label style="width:auto;font-size: 20px;margin-top: 5px;margin-left: 5px" >日期</label>
+                                                <div class="mws-form-item large" style="float: left;margin-top: 5px;margin-left: 1px">
+                                                    <input type="text" class="mws-textinput mws-datepicker" style="font-size: large;width:200px;" />
+                                                </div>
+                                            </div>
+                                            <div class="mws-form-row" style="clear:both;">
+                                                <div class="mws-form-row" style="float: left;">
+                                                    <label style="width: 40px;font-size: large;vertical-align:center;margin-top: 5px;margin-left: 5px" >件数</label>
+                                                    <div class="mws-form-item large" style="float: left;margin-top: 5px;margin-left: 1px">
+                                                        <input type="text" class="mws-textinput" disabled="disabled" value="1532" style="font-size: large;width:100px;" />
+                                                    </div>
+                                                    <label style="width: 40px;font-size: large;vertical-align:center;margin-top: 5px;margin-left: 5px" >PKGS</label>
+                                                </div>
+                                                <div class="mws-form-row" style="float: left;">
+                                                    <label style="width: 40px;font-size: large;vertical-align:center;margin-top: 5px;margin-left: 5px"  >毛重</label>
+                                                    <div class="mws-form-item large" style="float: left;margin-top: 5px;margin-left: 1px">
+                                                        <input type="text" class="mws-textinput" disabled="disabled" value="1532" style="font-size: large;width:100px;" />
+                                                    </div>
+                                                    <label style="width: 40px;font-size: large;vertical-align:center;margin-top: 5px;margin-left: 5px"  >KGS</label>
+                                                </div>
+                                                <div class="mws-form-row" style="float: left;">
+                                                    <label style="width: 40px;font-size: large;vertical-align:center;margin-top: 5px;margin-left: 5px"  >体积</label>
+                                                    <div class="mws-form-item large" style="float: left;margin-top: 5px;margin-left: 1px">
+                                                        <input type="text" class="mws-textinput" disabled="disabled" value="1532" style="font-size: large;width:100px;" />
+                                                    </div>
+                                                    <label style="width: 40px;font-size: large;vertical-align:center;margin-top: 5px;margin-left: 5px"  >M3</label>
+                                                </div>
+                                        </div>
+                                        <div class="mws-button-row">
+                                            <input type="submit" class="mws-button gray" VALUE="上一页"/>
+                                            <input type="submit" class="mws-button blue" VALUE="保存"/>
+                                            <input type="submit" class="mws-button red" value="保存并下一页"/>
+                                        </div>
+
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
+
                             <div class="clearfix">
                             </div>
                         </div>
