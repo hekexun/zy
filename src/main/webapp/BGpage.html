@@ -471,8 +471,8 @@
                                     <span class="mws-i-24 i-eyedropper">订舱委托</span>
                                 </div>
                                 <div class="mws-panel-body">
-                                    <form id="mws-validate" class="mws-form" action="http://www.malijuwebshop.com/themes/mws-admin/form_elements.html">
-                                        <div id="mws-validate-error" class="mws-form-message error" style="display:none;"></div>
+                                    <form  class="mws-form" action="http://www.malijuwebshop.com/themes/mws-admin/form_elements.html">
+                                        <div  class="mws-form-message error" style="display:none;"></div>
                                         <div class="mws-form-inline">
                                             <div class="mws-form-row" style="float: left;">
                                                 <label style="width:auto;font-size: 20px;margin-top: 5px;margin-left: 5px" >发货人</label>
@@ -570,8 +570,7 @@
                                                     </select>
                                                 </div>
                                             </div>
-                                            <div class="mws-form-row" style="clear:both;border-top: 1px dashed #000">
-                                            </div>
+                                            <div class="mws-form-row" style="clear:both;border-top: 1px dashed #000"></div>
                                             <div class="mws-form-row" style="float: left;">
                                                 <label style="width:auto;font-size: 20px;margin-top: 5px;margin-left: 5px" >唛头</label>
                                                 <div class="mws-form-item large" style="float: left;margin-top: 5px;margin-left: 1px">
@@ -590,7 +589,7 @@
                                                     <input type="text" class="mws-textinput mws-datepicker" style="font-size: large;width:200px;" />
                                                 </div>
                                             </div>
-                                            <div class="mws-form-row" style="clear:both;">
+                                            <div class="mws-form-row" style="clear:both;"></div>
                                                 <div class="mws-form-row" style="float: left;">
                                                     <label style="width: 40px;font-size: large;vertical-align:center;margin-top: 5px;margin-left: 5px" >件数</label>
                                                     <div class="mws-form-item large" style="float: left;margin-top: 5px;margin-left: 1px">
@@ -612,7 +611,63 @@
                                                     </div>
                                                     <label style="width: 40px;font-size: large;vertical-align:center;margin-top: 5px;margin-left: 5px"  >M3</label>
                                                 </div>
+                                                <div class="mws-form-row" style="clear:both;border-top: 1px dashed #000"></div>
+                                            <div class="mws-form-row" style="float: left;">
+                                            <label style="font-size: large" >运输方式</label>
+                                            <div class="mws-form-item large" style="margin-left: 2px">
+                                                <ul class="mws-form-list">
+                                                    <li><input type="checkbox" style="font-size: large" /> <label style="font-size: large">OCEN</label></li>
+                                                    <li><input type="checkbox" style="font-size: large" /> <label style="font-size: large">AIR</label></li>
+                                                    <li><input type="checkbox" style="font-size: large" /> <label style="font-size: large">TRACK</label></li>
+                                                    <li><input type="checkbox" style="font-size: large" /> <label style="font-size: large">EXPRESS</label></li>
+                                                </ul>
+                                            </div>
                                         </div>
+                                            <div class="mws-form-row" style="float: left;">
+                                                <label style="font-size: large;">运费</label>
+                                                <div class="mws-form-item large" style="margin-left: 2px">
+                                                    <ul class="mws-form-list">
+                                                        <li><input type="checkbox" style="font-size: large" /> <label style="font-size: large">到付</label></li>
+                                                        <li><input type="checkbox" style="font-size: large" /> <label style="font-size: large">预付</label></li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="mws-form-row" style="float: left;">
+                                                <label style="font-size: large" >运输条款</label>
+                                                <div class="mws-form-item large" style="margin-left: 2px">
+                                                    <ul class="mws-form-list">
+                                                        <li><input type="checkbox" style="font-size: large" /> <label style="font-size: large">EX WORK</label></li>
+                                                        <li><input type="checkbox" style="font-size: large" /> <label style="font-size: large">FOB</label></li>
+                                                        <li><input type="checkbox" style="font-size: large" /> <label style="font-size: large">OTHER</label></li>
+                                                        <li><input type="checkbox" style="font-size: large" /> <label style="font-size: large">C&F</label></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="mws-form-row" style="float: left;">
+                                                <label style="font-size: large" >装卸方式</label>
+                                                <div class="mws-form-item large" style="margin-left: 2px">
+                                                    <ul class="mws-form-list">
+                                                        <li><input type="checkbox" style="font-size: large" /> <label style="font-size: large">CFS-CFS</label></li>
+                                                        <li><input type="checkbox" style="font-size: large" /> <label style="font-size: large">CFS-CY</label></li>
+                                                        <li><input type="checkbox" style="font-size: large" /> <label style="font-size: large">CY-CY</label></li>
+                                                        <li><input type="checkbox" style="font-size: large" /> <label style="font-size: large">CY-CFS</label></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="mws-form-row" style="float: left;">
+                                                <label style="font-size: large" >集装箱数</label>
+                                                <div class="mws-form-item large" style="margin-left: 2px">
+                                                    <ul class="mws-form-list">
+                                                        <li><input type="text" style="width: 60px" /> <input type="checkbox" style="font-size: large" /> <label style="font-size: large">OCEN</label></li>
+                                                        <li><input type="text" style="width: 60px" /><input type="checkbox" style="font-size: large" /> <label style="font-size: large">AIR</label></li>
+                                                        <li><input type="text" style="width: 60px" /><input type="checkbox" style="font-size: large" /> <label style="font-size: large">TRACK</label></li>
+                                                        <li><input type="text" style="width: 60px" /><input type="checkbox" style="font-size: large" /> <label style="font-size: large">EXPRESS</label></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="mws-form-row" ></div>
+
                                         <div class="mws-button-row">
                                             <input type="submit" class="mws-button gray" VALUE="上一页"/>
                                             <input type="submit" class="mws-button blue" VALUE="保存"/>
@@ -629,183 +684,306 @@
                         </div>
 
                         <div id="tab-3">
-                            <div style="margin-bottom: 10px; text-align:right;">
-                                <div class="mws-form-row"  >
-                                    <label style="float: left;margin-right: 15px; margin-top: 5px;margin-left:20px;font-size: large">类型</label>
-                                    <div class="mws-form-item small" style="float: left;margin-top: 5px;">
-                                        <select id="select_lx2" style="font-size:large">
-                                            <option>总体</option>
-                                            <option>订单</option>
-                                            <option>销售</option>
-                                            <option>订单残</option>
-                                            <option>编成</option>
-                                        </select>
+                            <div class="mws-panel grid_8">
+                                <div class="mws-panel-header">
+                                    <span class="mws-i-24 i-table-1">Table with Toolbar</span>
+                                </div>
+                                <div class="mws-panel-body">
+                                    <div class="mws-panel-toolbar top clearfix">
+                                        <ul>
+                                            <li><a href="#" class="mws-ic-16 ic-accept">Accept</a></li>
+                                            <li><a href="#" class="mws-ic-16 ic-cross">Reject</a></li>
+                                            <li><a href="#" class="mws-ic-16 ic-printer">Print</a></li>
+                                            <li><a href="#" class="mws-ic-16 ic-arrow-refresh">Renew</a></li>
+                                            <li><a href="#" class="mws-ic-16 ic-edit">Update</a></li>
+                                        </ul>
                                     </div>
+                                    <table class="mws-table">
+                                        <thead>
+                                        <tr>
+                                            <th>序号</th>
+                                            <th>框型</th>
+                                            <th>框号</th>
+                                            <th>件数</th>
+                                            <th>净重</th>
+                                            <th>毛重</th>
+                                            <th>体积</th>
+                                            <th>品名</th>
+                                            <th>分类</th>
+                                            <th>发票号</th>
+                                            <th>紧急品</th>
+                                            <th>国家</th>
+                                            <th>集装箱号</th>
+                                            <th>铅封号</th>
+                                            <th>框数</th>
+                                            <th>图号</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr class="gradeX">
+                                            <td>Container1</td>
+                                            <td>00-XT</td>
+                                            <td>5-001</td>
+                                            <td>5</td>
+                                            <td>1324</td>
+                                            <td>1500</td>
+                                            <td>84</td>
+                                            <td>33</td>
+                                            <td>56-78</td>
+                                            <td>55-33</td>
+                                            <td>5</td>
+                                            <td>1324</td>
+                                            <td>1500</td>
+                                            <td>84</td>
+                                            <td>1500</td>
+                                            <td>84</td>
+                                        </tr>
+                                        <tr class="gradeC">
+                                            <td>Container2</td>
+                                            <td>00-XT</td>
+                                            <td>5-001</td>
+                                            <td>5</td>
+                                            <td>1324</td>
+                                            <td>1500</td>
+                                            <td>84</td>
+                                            <td>33</td>
+                                            <td>56-78</td>
+                                            <td>55-33</td>
+                                            <td>5</td>
+                                            <td>1324</td>
+                                            <td>1500</td>
+                                            <td>84</td>
+                                            <td>1500</td>
+                                            <td>84</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
-                                <input id="tb3" type="button" class="mws-tooltip-n mws-button blue"  value="图表" style="background: #4386bc" onclick="showTB3()" title="图表" />
-                                <input id="xx3" type="button" class="mws-tooltip-n mws-button blue" style="background: grey" style="" value="详细" onclick="showXX3()" title="详细" />
-                            </div>
-                        <div class="mws-panel grid_8" id="table3" style="display: none">
-                            <div class="mws-panel-header" >
-                                <span class="mws-i-24 i-table-1">数据详情</span>
-                            </div>
-                            <div class="mws-panel-body">
-                                <table class="mws-datatable-fn mws-table">
-                                    <thead>
-                                    <tr>
-                                        <th>月份</th>
-                                        <th>booking</th>
-                                        <th>sales</th>
-                                        <th>rest order</th>
-                                        <th>delay</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr class="gradeX">
-                                        <td>2017-01</td>
-                                        <td>1000</td>
-                                        <td>2684</td>
-                                        <td class="center">11296</td>
-                                        <td class="center">776</td>
-                                    </tr>
-                                    <tr class="gradeC">
-                                        <td>2017-02</td>
-                                        <td>1001</td>
-                                        <td>2684</td>
-                                        <td class="center">11294</td>
-                                        <td class="center">775</td>
-                                    </tr>
-                                    <tr class="gradeA">
-                                        <td>2017-03</td>
-                                        <td>1005</td>
-                                        <td>2685</td>
-                                        <td class="center">11600</td>
-                                        <td class="center">774</td>
-                                    </tr>
-                                    <tr class="gradeA">
-                                        <td>2017-04</td>
-                                        <td>1006</td>
-                                        <td>2688</td>
-                                        <td class="center">11700</td>
-                                        <td class="center">775</td>
-                                    </tr>
-                                    <tr class="gradeA">
-                                        <td>2017-05</td>
-                                        <td>1008</td>
-                                        <td>2655</td>
-                                        <td class="center">105555</td>
-                                        <td class="center">885</td>
-                                    </tr>
-                                    <tr class="gradeA">
-                                        <td>2017-06</td>
-                                        <td>1002</td>
-                                        <td>2665</td>
-                                        <td class="center">10555</td>
-                                        <td class="center">886</td>
-                                    </tr>
-                                    <tr class="gradeA">
-                                        <td>2017-07</td>
-                                        <td>2888</td>
-                                        <td>10556</td>
-                                        <td class="center">10556</td>
-                                        <td class="center">688</td>
-                                    </tr>
-                                    <tr class="gradeA">
-                                        <td>2017-08</td>
-                                        <td>1006</td>
-                                        <td>2888</td>
-                                        <td class="center">10885</td>
-                                        <td class="center">799</td>
-                                    </tr>
-                                    <tr class="gradeA">
-                                        <td>2017-09</td>
-                                        <td>6333</td>
-                                        <td>2600</td>
-                                        <td class="center">10555</td>
-                                        <td class="center">855</td>
-                                    </tr>
-                                    <tr class="gradeA">
-                                        <td>2017-10</td>
-                                        <td>5222</td>
-                                        <td>6555</td>
-                                        <td class="center">19885</td>
-                                        <td class="center">799</td>
-                                    </tr>
-                                    <tr class="gradeA">
-                                        <td>2017-11</td>
-                                        <td>4575</td>
-                                        <td>7458</td>
-                                        <td class="center">5777</td>
-                                        <td class="center">44</td>
-                                    </tr>
-                                    <tr class="gradeA">
-                                        <td>2017-12</td>
-                                        <td>6444</td>
-                                        <td>8577</td>
-                                        <td class="center">86576</td>
-                                        <td class="center">7524</td>
-                                    </tr>
-                                    <tr class="gradeA">
-                                        <td>2018-01</td>
-                                        <td>9787</td>
-                                        <td>6333</td>
-                                        <td class="center">45555</td>
-                                        <td class="center">2555</td>
-                                    </tr>
-                                    <tr class="gradeA">
-                                        <td>2018-02</td>
-                                        <td>7452</td>
-                                        <td>35523</td>
-                                        <td class="center">45345</td>
-                                        <td class="center">5354</td>
-                                    </tr>
-                                    <tr class="gradeA">
-                                        <td>2018-03</td>
-                                        <td>45345</td>
-                                        <td>45345</td>
-                                        <td class="center">45345</td>
-                                        <td class="center">453</td>
-                                    </tr>
-                                    <tr class="gradeA">
-                                        <td>2018-04</td>
-                                        <td>3242</td>
-                                        <td>453453</td>
-                                        <td class="center">53453</td>
-                                        <td class="center">655</td>
-                                    </tr>
-                                    <tr class="gradeA">
-                                        <td>2018-01</td>
-                                        <td>4534</td>
-                                        <td>54343
-                                        <td class="center">4537</td>
-                                        <td class="center">753</td>
-                                    </tr>
-                                    <tr class="gradeA">
-                                        <td>2018-01</td>
-                                        <td>838</td>
-                                        <td>4533</td>
-                                        <td class="center">45343</td>
-                                        <td class="center">453</td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                        <div class="mws-panel grid_8" id="chart3">
-                            <div class="mws-panel-header">
-                                <span class="mws-i-24 i-bar-graph">数据图示</span>
-                            </div>
-                            <div class="mws-panel-body">
-                                <div class="mws-panel-content">
-                                    <div id="mws-bar-chart5" style="width:100%; height:400px; "></div>
+                                <div class="clearfix" style="margin: 15px"></div>
+                                <div class="mws-button-row" style="float: right">
+                                    <input type="submit" class="mws-button gray" VALUE="上一页"/>
+                                    <input type="submit" class="mws-button blue" VALUE="保存"/>
+                                    <input type="submit" class="mws-button red" value="保存并下一页"/>
                                 </div>
                             </div>
-                        </div>
-                        <div class="clearfix">
-                        </div>
+                        <div class="clearfix"></div>
                     </div>
                         <div id="tab-4">
-                            <p>Suspendisse lacinia euismod ligula. Nullam sed est sem, nec sodales erat. Phasellus ipsum orci, scelerisque non faucibus ac, hendrerit ut massa. Praesent ornare justo non turpis convallis sit amet porta urna adipiscing. Donec ac neque non risus tristique commodo non et neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris tincidunt augue vitae risus lacinia sed tempor ligula dapibus. Proin et turpis lacus, eget convallis risus.</p>
+                            <div class="mws-panel grid_8">
+                                <div class="mws-panel-header">
+                                    <span class="mws-i-24 i-eyedropper">订舱委托</span>
+                                </div>
+                                <div class="mws-panel-body">
+                                    <form  class="mws-form" action="http://www.malijuwebshop.com/themes/mws-admin/form_elements.html">
+                                        <div  class="mws-form-message error" style="display:none;"></div>
+                                        <div class="mws-form-inline">
+                                            <div class="mws-form-row" style="float: left;">
+                                                <label style="width:auto;font-size: 20px;margin-top: 5px;margin-left: 5px" >发货人</label>
+                                                <div class="mws-form-item large" style="float: left;margin-top: 5px;margin-left: 1px">
+                                                    <select  style="font-size:large">
+                                                        <option>  </option>
+                                                        <option>李立</option>
+                                                        <option>广州</option>
+                                                        <option>天津</option>
+                                                        <option>日本</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="mws-form-row" style="float: left;">
+                                                <label style="width:auto;font-size: 20px;margin-top: 5px;margin-left: 5px" >收货人</label>
+                                                <div class="mws-form-item large" style="float: left;margin-top: 5px;margin-left: 1px">
+                                                    <select  style="font-size:large">
+                                                        <option>  </option>
+                                                        <option>李立</option>
+                                                        <option>广州</option>
+                                                        <option>天津</option>
+                                                        <option>日本</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="mws-form-row" style="float: left;">
+                                                <label style="width:auto;font-size: 20px;margin-top: 5px;margin-left: 5px" >通知方</label>
+                                                <div class="mws-form-item large" style="float: left;margin-top: 5px;margin-left: 1px">
+                                                    <select  style="font-size:large">
+                                                        <option>  </option>
+                                                        <option>李立</option>
+                                                        <option>广州</option>
+                                                        <option>天津</option>
+                                                        <option>日本</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="mws-form-row" style="float: left;">
+                                                <label style="width:auto;font-size: 20px;margin-top: 5px;margin-left: 5px" >装货港</label>
+                                                <div class="mws-form-item large" style="float: left;margin-top: 5px;margin-left: 1px">
+                                                    <select  style="font-size:large">
+                                                        <option>  </option>
+                                                        <option>广州</option>
+                                                        <option>青岛</option>
+                                                        <option>上海</option>
+                                                        <option>天津</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="mws-form-row" style="float: left;">
+                                                <label style="width:auto;font-size: 20px;margin-top: 5px;margin-left: 5px" >卸货港</label>
+                                                <div class="mws-form-item large" style="float: left;margin-top: 5px;margin-left: 1px">
+                                                    <select  style="font-size:large">
+                                                        <option>  </option>
+                                                        <option>广州</option>
+                                                        <option>青岛</option>
+                                                        <option>上海</option>
+                                                        <option>天津</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="mws-form-row" style="float: left;">
+                                                <label style="width:auto;font-size: 20px;margin-top: 5px;margin-left: 5px" >长宽高</label>
+                                                <div class="mws-form-item large" style="float: left;margin-top: 5px;margin-left: 1px">
+                                                    <select  style="font-size:large">
+                                                        <option>  </option>
+                                                        <option>34</option>
+                                                        <option>44</option>
+                                                        <option>45</option>
+                                                        <option>67</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="mws-form-row" style="float: left;">
+                                                <label style="width:auto;font-size: 20px;margin-top: 5px;margin-left: 5px" >货描</label>
+                                                <div class="mws-form-item large" style="float: left;margin-top: 5px;margin-left: 1px">
+                                                    <select  style="font-size:large">
+                                                        <option>  </option>
+                                                        <option>RED-E</option>
+                                                        <option>RED-T</option>
+                                                        <option>RED-D</option>
+                                                        <option>RED-Z</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="mws-form-row" style="float: left;">
+                                                <label style="width:auto;font-size: 20px;margin-top: 5px;margin-left: 5px" >代理商</label>
+                                                <div class="mws-form-item large" style="float: left;margin-top: 5px;margin-left: 1px">
+                                                    <select  style="font-size:large">
+                                                        <option>  </option>
+                                                        <option>OME</option>
+                                                        <option>RiCH</option>
+                                                        <option>Ko-E</option>
+                                                        <option>OB-Z</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="mws-form-row" style="clear:both;border-top: 1px dashed #000"></div>
+                                            <div class="mws-form-row" style="float: left;">
+                                                <label style="width:auto;font-size: 20px;margin-top: 5px;margin-left: 5px" >唛头</label>
+                                                <div class="mws-form-item large" style="float: left;margin-top: 5px;margin-left: 1px">
+                                                    <input type="text" class="mws-textinput"   style="font-size: large;width:200px;" />
+                                                </div>
+                                            </div>
+                                            <div class="mws-form-row" style="float: left;">
+                                                <label style="width:auto;font-size: 20px;margin-top: 5px;margin-left: 5px" >发票号</label>
+                                                <div class="mws-form-item large" style="float: left;margin-top: 5px;margin-left: 1px">
+                                                    <input type="text" class="mws-textinput"   style="width:200px;font-size: large" />
+                                                </div>
+                                            </div>
+                                            <div class="mws-form-row" style="float: left;">
+                                                <label style="width:auto;font-size: 20px;margin-top: 5px;margin-left: 5px" >日期</label>
+                                                <div class="mws-form-item large" style="float: left;margin-top: 5px;margin-left: 1px">
+                                                    <input type="text" class="mws-textinput mws-datepicker" style="font-size: large;width:200px;" />
+                                                </div>
+                                            </div>
+                                            <div class="mws-form-row" style="clear:both;"></div>
+                                            <div class="mws-form-row" style="float: left;">
+                                                <label style="width: 40px;font-size: large;vertical-align:center;margin-top: 5px;margin-left: 5px" >件数</label>
+                                                <div class="mws-form-item large" style="float: left;margin-top: 5px;margin-left: 1px">
+                                                    <input type="text" class="mws-textinput" disabled="disabled" value="1532" style="font-size: large;width:100px;" />
+                                                </div>
+                                                <label style="width: 40px;font-size: large;vertical-align:center;margin-top: 5px;margin-left: 5px" >PKGS</label>
+                                            </div>
+                                            <div class="mws-form-row" style="float: left;">
+                                                <label style="width: 40px;font-size: large;vertical-align:center;margin-top: 5px;margin-left: 5px"  >毛重</label>
+                                                <div class="mws-form-item large" style="float: left;margin-top: 5px;margin-left: 1px">
+                                                    <input type="text" class="mws-textinput" disabled="disabled" value="1532" style="font-size: large;width:100px;" />
+                                                </div>
+                                                <label style="width: 40px;font-size: large;vertical-align:center;margin-top: 5px;margin-left: 5px"  >KGS</label>
+                                            </div>
+                                            <div class="mws-form-row" style="float: left;">
+                                                <label style="width: 40px;font-size: large;vertical-align:center;margin-top: 5px;margin-left: 5px"  >体积</label>
+                                                <div class="mws-form-item large" style="float: left;margin-top: 5px;margin-left: 1px">
+                                                    <input type="text" class="mws-textinput" disabled="disabled" value="1532" style="font-size: large;width:100px;" />
+                                                </div>
+                                                <label style="width: 40px;font-size: large;vertical-align:center;margin-top: 5px;margin-left: 5px"  >M3</label>
+                                            </div>
+                                            <div class="mws-form-row" style="clear:both;border-top: 1px dashed #000"></div>
+                                            <div class="mws-form-row" style="float: left;">
+                                                <label style="font-size: large" >运输方式</label>
+                                                <div class="mws-form-item large" style="margin-left: 2px">
+                                                    <ul class="mws-form-list">
+                                                        <li><input type="checkbox" style="font-size: large" /> <label style="font-size: large">OCEN</label></li>
+                                                        <li><input type="checkbox" style="font-size: large" /> <label style="font-size: large">AIR</label></li>
+                                                        <li><input type="checkbox" style="font-size: large" /> <label style="font-size: large">TRACK</label></li>
+                                                        <li><input type="checkbox" style="font-size: large" /> <label style="font-size: large">EXPRESS</label></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="mws-form-row" style="float: left;">
+                                                <label style="font-size: large;">运费</label>
+                                                <div class="mws-form-item large" style="margin-left: 2px">
+                                                    <ul class="mws-form-list">
+                                                        <li><input type="checkbox" style="font-size: large" /> <label style="font-size: large">到付</label></li>
+                                                        <li><input type="checkbox" style="font-size: large" /> <label style="font-size: large">预付</label></li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="mws-form-row" style="float: left;">
+                                                <label style="font-size: large" >运输条款</label>
+                                                <div class="mws-form-item large" style="margin-left: 2px">
+                                                    <ul class="mws-form-list">
+                                                        <li><input type="checkbox" style="font-size: large" /> <label style="font-size: large">EX WORK</label></li>
+                                                        <li><input type="checkbox" style="font-size: large" /> <label style="font-size: large">FOB</label></li>
+                                                        <li><input type="checkbox" style="font-size: large" /> <label style="font-size: large">OTHER</label></li>
+                                                        <li><input type="checkbox" style="font-size: large" /> <label style="font-size: large">C&F</label></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="mws-form-row" style="float: left;">
+                                                <label style="font-size: large" >装卸方式</label>
+                                                <div class="mws-form-item large" style="margin-left: 2px">
+                                                    <ul class="mws-form-list">
+                                                        <li><input type="checkbox" style="font-size: large" /> <label style="font-size: large">CFS-CFS</label></li>
+                                                        <li><input type="checkbox" style="font-size: large" /> <label style="font-size: large">CFS-CY</label></li>
+                                                        <li><input type="checkbox" style="font-size: large" /> <label style="font-size: large">CY-CY</label></li>
+                                                        <li><input type="checkbox" style="font-size: large" /> <label style="font-size: large">CY-CFS</label></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="mws-form-row" style="float: left;">
+                                                <label style="font-size: large" >集装箱数</label>
+                                                <div class="mws-form-item large" style="margin-left: 2px">
+                                                    <ul class="mws-form-list">
+                                                        <li><input type="text" style="width: 60px" /> <input type="checkbox" style="font-size: large" /> <label style="font-size: large">OCEN</label></li>
+                                                        <li><input type="text" style="width: 60px" /><input type="checkbox" style="font-size: large" /> <label style="font-size: large">AIR</label></li>
+                                                        <li><input type="text" style="width: 60px" /><input type="checkbox" style="font-size: large" /> <label style="font-size: large">TRACK</label></li>
+                                                        <li><input type="text" style="width: 60px" /><input type="checkbox" style="font-size: large" /> <label style="font-size: large">EXPRESS</label></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="mws-form-row" ></div>
+
+                                            <div class="mws-button-row">
+                                                <input type="submit" class="mws-button gray" VALUE="上一页"/>
+                                                <input type="submit" class="mws-button blue" VALUE="保存"/>
+                                                <input type="submit" class="mws-button red" value="保存并下一页"/>
+                                            </div>
+
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="clearfix">
+                            </div>
                         </div>
                         <div id="tab-5">
                             <p>Suspendisse lacinia euismod ligula. Nullam sed est sem, nec sodales erat. Phasellus ipsum orci, scelerisque non faucibus ac, hendrerit ut massa. Praesent ornare justo non turpis convallis sit amet porta urna adipiscing. Donec ac neque non risus tristique commodo non et neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris tincidunt augue vitae risus lacinia sed tempor ligula dapibus. Proin et turpis lacus, eget convallis risus.</p>
