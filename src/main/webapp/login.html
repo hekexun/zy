@@ -1,142 +1,114 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-<!-- Required Stylesheets -->
-<link rel="stylesheet" type="text/css" href="css/reset.css" media="screen" />
-<link rel="stylesheet" type="text/css" href="css/text.css" media="screen" />
-<link rel="stylesheet" type="text/css" href="css/fonts/ptsans/stylesheet.css" media="screen" />
-<link rel="stylesheet" type="text/css" href="css/fluid.css" media="screen" />
-
-<link rel="stylesheet" type="text/css" href="css/mws.style.css" media="screen" />
-<link rel="stylesheet" type="text/css" href="css/icons/icons.css" media="screen" />
-
-<!-- Demo and Plugin Stylesheets -->
-<link rel="stylesheet" type="text/css" href="css/demo.css" media="screen" />
-
-<link rel="stylesheet" type="text/css" href="plugins/colorpicker/colorpicker.css" media="screen" />
-<link rel="stylesheet" type="text/css" href="plugins/jimgareaselect/css/imgareaselect-default.css" media="screen" />
-<link rel="stylesheet" type="text/css" href="plugins/fullcalendar/fullcalendar.css" media="screen" />
-<link rel="stylesheet" type="text/css" href="plugins/fullcalendar/fullcalendar.print.css" media="print" />
-<link rel="stylesheet" type="text/css" href="plugins/tipsy/tipsy.css" media="screen" />
-<link rel="stylesheet" type="text/css" href="plugins/sourcerer/Sourcerer-1.2.css" media="screen" />
-<link rel="stylesheet" type="text/css" href="plugins/jgrowl/jquery.jgrowl.css" media="screen" />
-<link rel="stylesheet" type="text/css" href="plugins/spinner/spinner.css" media="screen" />
-<link rel="stylesheet" type="text/css" href="css/jui/jquery.ui.css" media="screen" />
-
-<!-- Theme Stylesheet -->
-<link rel="stylesheet" type="text/css" href="css/mws.theme.css" media="screen" />
-
-<!-- JavaScript Plugins -->
-
-<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
-
-<script type="text/javascript" src="plugins/jimgareaselect/jquery.imgareaselect.min.js"></script>
-<script type="text/javascript" src="plugins/jquery.dualListBox-1.3.min.js"></script>
-<script type="text/javascript" src="plugins/jgrowl/jquery.jgrowl.js"></script>
-<script type="text/javascript" src="plugins/jquery.filestyle.js"></script>
-<script type="text/javascript" src="plugins/fullcalendar/fullcalendar.min.js"></script>
-<script type="text/javascript" src="plugins/jquery.dataTables.js"></script>
-<!--[if lt IE 9]>
-<script type="text/javascript" src="plugins/flot/excanvas.min.js"></script>
-<![endif]-->
-<script type="text/javascript" src="plugins/flot/jquery.flot.min.js"></script>
-<script type="text/javascript" src="plugins/flot/jquery.flot.pie.min.js"></script>
-<script type="text/javascript" src="plugins/flot/jquery.flot.stack.min.js"></script>
-<script type="text/javascript" src="plugins/flot/jquery.flot.resize.min.js"></script>
-<script type="text/javascript" src="plugins/colorpicker/colorpicker.js"></script>
-<script type="text/javascript" src="plugins/tipsy/jquery.tipsy.js"></script>
-<script type="text/javascript" src="plugins/sourcerer/Sourcerer-1.2.js"></script>
-<script type="text/javascript" src="plugins/jquery.placeholder.js"></script>
-<script type="text/javascript" src="plugins/jquery.validate.js"></script>
-<script type="text/javascript" src="plugins/jquery.mousewheel.js"></script>
-<script type="text/javascript" src="plugins/spinner/ui.spinner.js"></script>
-<script type="text/javascript" src="js/jquery-ui.js"></script>
-
-<script type="text/javascript" src="js/mws.js"></script>
-<script type="text/javascript" src="js/demo.js"></script>
-<script type="text/javascript" src="js/themer.js"></script>
-    <script type="text/javascript" src="js/jquery.cookie.js"></script>
-
-<script type="text/javascript">
-	$(document).ready(function() {
-		$("div#mws-login .mws-login-back").mouseover(function(event) {
-			$(this).find("a").animate({'left':0})
-		}).mouseout(function(event) {
-			$(this).find("a").animate({'left':70})
-		});
-	});
-	//add by hekexun
-    //to get login
-	function dologin()
-    {
-        $.cookie('username', null);
-        $.cookie('password', null);
-        var userName = $("#username").val();
-        var password=$("#password").val();
-        $.ajax({
-                type:"post",
-                url:"login.do",
-                dataType: 'json',
-                data:{"username":userName,"password" : password },
-                success:function(data_or){
-                    var user=data_or;
-                    if (user.state=="2") {
-                        $.cookie("userName", userName,{expires:1,Domain:"http://127.0.0.1:8080"});
-                        //$.cookie("password", password,{expires:1,Domain:"http://127.0.0.1:8080"});
-                        window.location.href = "/indexpage.html";
-                    } else {
-                        alert("登陆失败");
-                        window.location.reload();
-                    }
-                },
-                error: function(XMLHttpRequest, textStatus, errorThrown) {
-                    alert(XMLHttpRequest.status);
-                    alert(XMLHttpRequest.readyState);
-                    alert(textStatus);
-                }
-            }
-        );
-    }
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<title>行业智慧能力平台</title>
+<link rel="stylesheet" type="text/css" href="css/style2.0.css">
+<style type="text/css">
+	ul li{font-size: 30px;color:#2ec0f6;}
+	.tyg-div{z-index:-1000;float:left;position:absolute;left:5%;top:20%;}
+	.tyg-p{
+		font-size: 14px;
+	    font-family: 'microsoft yahei';
+	    position: absolute;
+	    top: 135px;
+	    left: 60px;
+	}
+	.tyg-div-denglv{
+		z-index:1000;float:right;position:absolute;right:3%;top:10%;
+	}
+	.tyg-div-form{
+		background-color: #23305a;
+		width:300px;
+		height:auto;
+		margin:120px auto 0 auto;
+		color:#2ec0f6;
+	}
+	.tyg-div-form form {padding:10px;}
+	.tyg-div-form form input[type="text"]{
+		width: 270px;
+	    height: 30px;
+	    margin: 25px 10px 0px 0px;
+	}
+	.tyg-div-form form button {
+	    cursor: pointer;
+	    width: 270px;
+	    height: 44px;
+	    margin-top: 25px;
+	    padding: 0;
+	    background: #2ec0f6;
+	    -moz-border-radius: 6px;
+	    -webkit-border-radius: 6px;
+	    border-radius: 6px;
+	    border: 1px solid #2ec0f6;
+	    -moz-box-shadow:
+	        0 15px 30px 0 rgba(255,255,255,.25) inset,
+	        0 2px 7px 0 rgba(0,0,0,.2);
+	    -webkit-box-shadow:
+	        0 15px 30px 0 rgba(255,255,255,.25) inset,
+	        0 2px 7px 0 rgba(0,0,0,.2);
+	    box-shadow:
+	        0 15px 30px 0 rgba(255,255,255,.25) inset,
+	        0 2px 7px 0 rgba(0,0,0,.2);
+	    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+	    font-size: 14px;
+	    font-weight: 700;
+	    color: #fff;
+	    text-shadow: 0 1px 2px rgba(0,0,0,.1);
+	    -o-transition: all .2s;
+	    -moz-transition: all .2s;
+	    -webkit-transition: all .2s;
+	    -ms-transition: all .2s;
+}
+</style>
+<body>
+<div id="contPar" class="contPar">
+	<div id="page1"  style="z-index:1;">
+		<div class="title0">住友重机械减速机</div>
+		<div class="title1"></div>
+		<div class="imgGroug">
+			<ul>
+				<img alt="" class="img0 png" src="./images/page1_0.png">
+				<img alt="" class="img1 png" src="./images/page1_1.png">
+				<img alt="" class="img2 png" src="./images/page1_2.png">
+			</ul>
+		</div>
+		<img alt="" class="img3 png" src="./images/page1_3.jpg">
+	</div>
+</div>
+<div class="tyg-div-denglv">
+	<div class="tyg-div-form">
+		<form action="/indexpage.html">
+			<h2>登录</h2><p class="tyg-p">&nbsp;</p>
+			<div style="margin:5px 0px;">
+				<input type="text" placeholder="请输入账号..."/>
+			</div>
+			<div style="margin:5px 0px;">
+				<input type="text" placeholder="请输入密码..."/>
+			</div>
+			<div style="margin:5px 0px;">
+				<input type="text" style="width:150px;" placeholder="请输入验证码..."/>
+				<img src="./images/1.png" style="vertical-align:bottom;" alt="验证码"/>
+			</div>
+			<button type="submit" >登<span style="width:20px;"></span>录</button>
+		</form>
+	</div>
+</div>
+<script type="text/javascript" src="./js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="./js/com.js"></script>
+<!--[if IE 6]>
+<script language="javascript" type="text/javascript" src="./script/ie6_png.js"></script>
+<script language="javascript" type="text/javascript">
+DD_belatedPNG.fix(".png");
 </script>
+<![endif]-->
 
-<title>ZYsystem</title>
 
-</head>
-<body >
-<div  style="height: 10%;">
-
-    <div id="mws-logo-wrap" STYLE="margin-top: 1%" >
-        <img src="images/CY2.png" alt="mws admin" />
-    </div>
-</div>
-<div style="height: 90%;top: 10%;width:60%;float:left;left: 40%">
-    <div style="float: left"><img style="margin-left:20%;margin-top: 20%" src="images/CY00.png" alt=""/></div>
-    <div style="float: right;"><img style="margin-right: 50%;margin-top:30%" src="images/BBB2.png" alt=""/></div>
-</div>
-<div style="height: 90%;top: 10%;width:40%;float: left">
-        <div id="mws-login" >
-    	<h1>登录</h1>
-        <div class="mws-login-lock"><img src="css/icons/24/locked-2.png" alt="" /></div>
-    	<div id="mws-login-form">
-        	<form class="mws-form" action="dashboard.html" method="post">
-                <div class="mws-form-row">
-                	<div class="mws-form-item large">
-                    	<input type="text" class="mws-login-username mws-textinput" placeholder="username" id="username"/>
-                    </div>
-                </div>
-                <div class="mws-form-row">
-                	<div class="mws-form-item large">
-                    	<input type="password" class="mws-login-password mws-textinput" placeholder="password" id="password" />
-                    </div>
-                </div>
-                <div class="mws-form-row">
-                	<input type="button" value="登录" class="mws-button green mws-login-button" onclick="dologin()" />
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
 </body>
+<script type="text/javascript">
+    function dologin()
+	{
+        window.location.href = "/indexpage.html";
+	}
+	</script>
 </html>

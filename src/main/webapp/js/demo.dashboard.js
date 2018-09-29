@@ -23,7 +23,7 @@ function indexinit() {
     var user ="hello,"+ $.cookie("userName");
     if (user == null) {
         alert("您还没有登录");
-        window.location.href = "/login.html";
+        window.location.href = "/login1.html";
     } else {
         $('#mws-username').html('user')
     }
